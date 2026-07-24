@@ -2,6 +2,7 @@
   "schema_version": "organa-well-known-v0.1",
   "coordinate": "7187.bitmap",
   "cell_type": "organa-cell",
+  "state_semantics_url": "https://danyanpihuihui.github.io/organa-cell-7187/organa-state-semantics-v0.1.json",
   "current_manifest": {
     "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/organa-cell.json",
     "sha256": "sha256:4ce70ee51fcd3de36111fa30063fefb02132e0894855cceba6b2afd154f682fb",

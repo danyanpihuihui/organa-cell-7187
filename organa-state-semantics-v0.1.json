@@ -1,0 +1,55 @@
+{
+  "schema_version": "organa-state-semantics-v0.1",
+  "applies_to": "Organa Cell resolution v0.1 and later",
+  "canonical_state_source": "/.well-known/organa.json",
+  "states": {
+    "lifecycle_status": {
+      "meaning": "declared object lifecycle",
+      "values": ["pending", "live", "simulation", "deprecated"],
+      "scope": "The declared lifecycle of a manifest, agent, service, or proof object. It does not by itself prove deployment, controller authentication, endpoint availability, or canonical activation."
+    },
+    "activation_status": {
+      "meaning": "canonical publication activation",
+      "values": ["awaiting-controller-signature", "active", "deprecated"],
+      "scope": "The publication-stage state resolved from the canonical well-known document. Active means the canonical resolver binds a signed controller claim to the exact manifest URL and SHA-256."
+    },
+    "controller_authentication": {
+      "meaning": "controller authentication state",
+      "values": ["pending-user-signature", "signed", "invalid", "deprecated"],
+      "scope": "Whether a controller address has produced a valid signature over the exact manifest identity and signing message. It is independent of lifecycle and endpoint availability."
+    }
+  },
+  "precedence": [
+    "Use /.well-known/organa.json for the current canonical manifest and activation state.",
+    "Use controller-claim.json plus independent BIP-322 verification for controller authentication.",
+    "Treat status fields inside a signed manifest, signature request, proof index, or build-time report as immutable statements made when that candidate snapshot was constructed."
+  ],
+  "immutable_candidate_snapshot": {
+    "description": "A versioned manifest is constructed and hashed before the controller can sign it. After signing, its bytes and all signature-bound inputs remain immutable even if they contain pre-activation status values.",
+    "must_not_be_mutated_after_signature": true,
+    "activation_mechanism": "Publish the signed controller claim, independently verify it, then atomically update the canonical well-known resolver to active/signed without rewriting the signed manifest.",
+    "future_change_policy": "Any change to manifest bytes, URLs, resources, or signature-bound semantics requires a new version, a previous_manifest link, and a fresh controller signature."
+  },
+  "signature_expiry": {
+    "meaning": "signature-authorization-window",
+    "description": "expires_at_utc is the deadline for first producing and publishing an authorized signature for that request; it is not automatic revocation of a historical claim completed in time.",
+    "completed_before_expiry_remains_historically_valid": true,
+    "late_signature_requires_new_request": true,
+    "revocation_policy": "Revocation or replacement must be expressed by a later canonical version or explicit deprecated/revoked state; passage of expires_at_utc alone does not rewrite history."
+  },
+  "verification_boundary": {
+    "proves": [
+      "structural validity",
+      "resource hash integrity",
+      "manifest and version continuity",
+      "controller authentication when BIP-322 verification succeeds"
+    ],
+    "does_not_prove": [
+      "controller civil identity",
+      "business truth",
+      "economic performance",
+      "private execution correctness",
+      "continuous runtime availability of declared agents"
+    ]
+  }
+}
