@@ -1,0 +1,18 @@
+{
+  "schema_version": "organa-registry-v0.1",
+  "coordinate": "7187.bitmap",
+  "registry_type": "services",
+  "entries": [
+    {
+      "id": "organa-proof-verifier",
+      "name": "Organa Proof Verifier",
+      "service_type": "artifact-verification",
+      "lifecycle_status": "pending",
+      "endpoint_status": "not-deployed",
+      "openapi_url": "https://danyanpihuihui.github.io/organa-cell-7187/openapi.json",
+      "mcp_url": "https://danyanpihuihui.github.io/organa-cell-7187/mcp",
+      "human_url": "https://danyanpihuihui.github.io/organa-cell-7187/verifier",
+      "disclosure_level": "L2_METADATA_PROOF"
+    }
+  ]
+}

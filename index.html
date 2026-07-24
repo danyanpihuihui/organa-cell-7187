@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>7187.bitmap — Organa Cell</title>
+  <style>
+    :root{color-scheme:dark;--bg:#090b10;--panel:#111722;--line:#273247;--text:#edf4ff;--muted:#96a5bc;--accent:#ff8a33;--ok:#5ce1a4}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0,#172137 0,#090b10 44%);color:var(--text);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,sans-serif}
+    main{max-width:920px;margin:auto;padding:72px 24px}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    h1{font-size:clamp(42px,8vw,78px);line-height:1;margin:.25em 0}.lead{font-size:21px;max-width:760px;color:#cbd7e8}
+    .status{display:inline-flex;gap:9px;align-items:center;border:1px solid var(--line);background:#101827;padding:8px 12px;border-radius:999px;color:var(--muted)}.dot{width:9px;height:9px;border-radius:50%;background:var(--accent)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:40px 0}.card{background:rgba(17,23,34,.88);border:1px solid var(--line);border-radius:18px;padding:22px}.card h2{margin-top:0;font-size:19px}.card p{color:var(--muted)}
+    a{color:#91c7ff}.links{display:flex;flex-wrap:wrap;gap:12px}.links a{padding:10px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;background:#101827}
+    code{color:var(--ok)}footer{margin-top:56px;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body><main>
+  <div class="eyebrow">First Organa Cell candidate</div>
+  <h1>7187.bitmap</h1>
+  <p class="lead">A Bitcoin-native public coordinate for a verifiable AI-agent organization. Public coordination, private execution, independently checkable proof.</p>
+  <div class="status"><span class="dot"></span>Pending · locally verified · controller signature pending</div>
+  <section class="grid">
+    <article class="card"><h2>Machine discovery</h2><p>Resolve the current Cell manifest, registries, proofs and disclosure boundary from <code>/.well-known/organa.json</code>.</p></article>
+    <article class="card"><h2>Proof, not exposure</h2><p>Public hashes and metadata prove continuity. Strategies, credentials, private memory and account evidence remain outside the public package.</p></article>
+    <article class="card"><h2>First planned service</h2><p>Organa Proof Verifier will validate schemas, files, SHA-256 values and proof roots through HTTPS, OpenAPI and MCP.</p></article>
+  </section>
+  <nav class="links">
+    <a href=".well-known/organa.json">Well-known resolver</a>
+    <a href="organa-cell.json">Cell manifest</a>
+    <a href="agent-registry.json">Agents</a>
+    <a href="service-registry.json">Services</a>
+    <a href="proof-index.json">Proofs</a>
+    <a href="signature-request.json">Signature request</a>
+    <a href="verification-report.json">Verification report</a>
+  </nav>
+  <footer>7187.bitmap is the first Organa Cell candidate. This pending package does not transfer assets, authorize spending or expose private execution data.</footer>
+</main></body></html>
