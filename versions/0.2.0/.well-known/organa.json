@@ -1,0 +1,22 @@
+{
+  "schema_version": "organa-well-known-v0.1",
+  "coordinate": "7187.bitmap",
+  "cell_type": "organa-cell",
+  "current_manifest": {
+    "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/organa-cell.json",
+    "sha256": "sha256:4ce70ee51fcd3de36111fa30063fefb02132e0894855cceba6b2afd154f682fb",
+    "version": "0.2.0",
+    "lifecycle_status": "live"
+  },
+  "controller_claim": {
+    "status": "pending-user-signature",
+    "signature_request_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/signature-request.json",
+    "signature_request_sha256": "sha256:6c81219c34b08ae98afec26b43aa1831d75d15cf3d1677c7f5e52653fb3b33ce"
+  },
+  "registries": {
+    "agents": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/agent-registry.json",
+    "services": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/service-registry.json",
+    "proofs": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/proof-index.json"
+  },
+  "activation_status": "awaiting-controller-signature"
+}

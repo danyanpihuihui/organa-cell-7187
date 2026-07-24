@@ -1,0 +1,18 @@
+{
+  "schema_version": "organa-registry-v0.1",
+  "coordinate": "7187.bitmap",
+  "registry_type": "services",
+  "entries": [
+    {
+      "id": "organa-proof-verifier",
+      "name": "Organa Proof Verifier",
+      "service_type": "artifact-verification",
+      "lifecycle_status": "live",
+      "endpoint_status": "available",
+      "health_url": "https://organa-proof-verifier.onrender.com/health",
+      "openapi_url": "https://organa-proof-verifier.onrender.com/openapi.json",
+      "human_url": "https://organa-proof-verifier.onrender.com/",
+      "disclosure_level": "L2_METADATA_PROOF"
+    }
+  ]
+}

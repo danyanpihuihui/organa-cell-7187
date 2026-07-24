@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>7187.bitmap v0.2 Signing</title><style>body{font:16px system-ui;background:#0b0d12;color:#edf3ff;max-width:900px;margin:50px auto;padding:24px}textarea{width:100%;height:390px;background:#121722;color:#fff;border:1px solid #34405a;border-radius:12px;padding:16px;box-sizing:border-box}button{font-size:18px;padding:14px 22px;border:0;border-radius:12px;background:#f59a23;color:#111;font-weight:700;margin:15px 8px 0 0}.note{color:#aab8cc}.result{word-break:break-all;color:#69e0aa}</style></head><body><h1>7187.bitmap v0.2 Controller Signing</h1><p class="note">BIP-322 Simple message signature only. No transaction, PSBT, miner fee, inscription transfer, spending approval, or private-key export.</p><textarea id="message" readonly>Organa Cell Controller Claim v0.1
+Domain: organa-cell-controller-claim
+Bitcoin network: mainnet
+Coordinate: 7187.bitmap
+Controller address: bc1p4wz46fk45hp5crm56k4emxelln9tpuc76frn2duumlyecr9ft35qjxmadq
+Cell manifest: https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/organa-cell.json
+Cell manifest SHA-256: sha256:4ce70ee51fcd3de36111fa30063fefb02132e0894855cceba6b2afd154f682fb
+Schema version: organa-cell-resolution-v0.1
+Version: 0.2.0
+Previous manifest SHA-256: sha256:e1a36acbb702b46fc50bcb9f0f20b754ff813fd6198c88cccae2a33762c453ce
+Issued at UTC: 2026-07-24T14:34:38.722942+00:00
+Expires at UTC: 2026-07-31T14:34:38.722942+00:00
+
+I attest that this wallet controls the publication authority for this Organa Cell manifest. This signature does not transfer assets, authorize spending, or reveal private Organa data.</textarea><br><button id="open">Sign with UniSat</button><button id="copy">Copy message</button><p id="status" class="note">Ready.</p><p id="result" class="result"></p><script>const m=document.getElementById('message');document.getElementById('copy').onclick=()=>navigator.clipboard.writeText(m.value);document.getElementById('open').onclick=async()=>{const s=document.getElementById('status');try{if(!window.unisat)throw new Error('UniSat provider not detected');const a=await window.unisat.requestAccounts();s.textContent='Account: '+a[0]+' — confirm BIP-322 Simple signature';const sig=await window.unisat.signMessage(m.value,'bip322-simple');document.getElementById('result').textContent=sig;navigator.clipboard.writeText(sig).catch(()=>{});s.textContent='Signature returned and copied. Paste it back to Hermes.';}catch(e){s.textContent='Stopped: '+(e?.message||String(e));}};</script></body></html>
