@@ -3,22 +3,24 @@
   "coordinate": "7187.bitmap",
   "cell_type": "organa-cell",
   "current_manifest": {
-    "url": "https://danyanpihuihui.github.io/organa-cell-7187/organa-cell.json",
-    "sha256": "sha256:e1a36acbb702b46fc50bcb9f0f20b754ff813fd6198c88cccae2a33762c453ce",
-    "version": "0.1.0",
-    "lifecycle_status": "pending"
+    "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/organa-cell.json",
+    "sha256": "sha256:4ce70ee51fcd3de36111fa30063fefb02132e0894855cceba6b2afd154f682fb",
+    "version": "0.2.0",
+    "lifecycle_status": "live"
   },
   "controller_claim": {
-    "status": "signed-and-locally-verified",
+    "status": "signed",
+    "signature_request_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/signature-request.json",
+    "signature_request_sha256": "sha256:6c81219c34b08ae98afec26b43aa1831d75d15cf3d1677c7f5e52653fb3b33ce",
+    "signed_claim_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/controller-claim.json",
+    "signed_claim_sha256": "sha256:6d1ceecd5dcdf9f34fdc2b6072707698dc2079ca78d6f16e353ed6524dbb060f",
     "signature_method": "BIP-322-simple-message-signature",
-    "signature_request_url": "https://danyanpihuihui.github.io/organa-cell-7187/signature-request.json",
-    "signature_request_sha256": "sha256:2517c929882570346cdfa94f6e22bf1135405a83935797bf0bbf0afb8d3ca6ef",
-    "signed_claim_url": "https://danyanpihuihui.github.io/organa-cell-7187/controller-claim.json",
-    "signed_claim_sha256": "sha256:344b94f4b76ba9a099d9c16651e0fd064104eab36d8aea516bdc4c9873db779e"
+    "signature_valid": true
   },
   "registries": {
-    "agents": "https://danyanpihuihui.github.io/organa-cell-7187/agent-registry.json",
-    "services": "https://danyanpihuihui.github.io/organa-cell-7187/service-registry.json",
-    "proofs": "https://danyanpihuihui.github.io/organa-cell-7187/proof-index.json"
-  }
+    "agents": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/agent-registry.json",
+    "services": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/service-registry.json",
+    "proofs": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/proof-index.json"
+  },
+  "activation_status": "active"
 }
