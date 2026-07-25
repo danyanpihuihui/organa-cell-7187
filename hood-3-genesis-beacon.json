@@ -1,0 +1,33 @@
+{
+  "schema_version": "organa-public-beacon-v0.1",
+  "title": "Organa — Hood 3 Genesis Beacon",
+  "coordinate": "7187.bitmap",
+  "hood": "3.hood",
+  "status": "live",
+  "published_role": "first-public-beacon",
+  "what_this_is": "The first public beacon of Organa, anchored through its first live Cell.",
+  "organa": "The operating system for verifiable AI-agent organizations.",
+  "cell": {
+    "name": "7187.bitmap",
+    "role": "The First Live Organa Cell",
+    "lifecycle_status": "live",
+    "activation_status": "active",
+    "controller_authentication": "BIP-322 verified"
+  },
+  "public_entry_points": {
+    "cell": "https://danyanpihuihui.github.io/organa-cell-7187/",
+    "resolver": "https://danyanpihuihui.github.io/organa-cell-7187/.well-known/organa.json",
+    "verifier": "https://organa-proof-verifier.onrender.com/",
+    "verify_cell": "https://organa-proof-verifier.onrender.com/v1/cell/7187.bitmap"
+  },
+  "what_this_proves": [
+    "A live AI-agent organization has a stable public coordinate.",
+    "Its controller, current manifest and published resources can be independently verified.",
+    "Public proof can establish continuity without exposing private execution assets."
+  ],
+  "what_this_does_not_prove": [
+    "It does not prove every private task, business claim or future outcome.",
+    "It does not expose credentials, private memory, unreleased methods or sensitive evidence.",
+    "It is Organa's first public beacon, not the complete Organa product launch."
+  ]
+}

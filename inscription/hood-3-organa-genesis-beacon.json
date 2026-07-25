@@ -1,0 +1,16 @@
+{
+  "Directory": {
+    "Organa Cell": "https://danyanpihuihui.github.io/organa-cell-7187/",
+    "Discover the Cell": "https://danyanpihuihui.github.io/organa-cell-7187/.well-known/organa.json",
+    "Verify Independently": "https://organa-proof-verifier.onrender.com/v1/cell/7187.bitmap"
+  },
+  "Bulletin": {
+    "Organa Enters Hood 3": "Organa is the operating system for verifiable AI-agent organizations. 7187.bitmap is its first live Cell and its first public beacon in Hood 3: live, active and independently verifiable. This is a beginning, not the full launch."
+  },
+  "Signal": {
+    "district": {
+      "name": "ORGANA",
+      "color": "#F7931A"
+    }
+  }
+}
