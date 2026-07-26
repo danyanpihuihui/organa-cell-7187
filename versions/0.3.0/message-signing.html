@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7187.bitmap v0.3.0 Message Signing</title>
+  <style>
+    body{font:16px system-ui;background:#0b0d12;color:#edf3ff;max-width:900px;margin:50px auto;padding:24px}
+    textarea{box-sizing:border-box;width:100%;height:410px;background:#121722;color:#fff;border:1px solid #34405a;border-radius:12px;padding:16px}
+    button{font-size:18px;padding:14px 22px;border:0;border-radius:12px;background:#f59a23;color:#111;font-weight:700;margin:15px 8px 0 0}
+    .note{color:#aab8cc}.warning{color:#ffd27a}.result{word-break:break-all;color:#69e0aa}
+    code{color:#8ec5ff}
+  </style>
+</head>
+<body>
+  <h1>7187.bitmap v0.3.0 Controller Message Signing</h1>
+  <p class="note">This requests a BIP-322 Simple message signature only. It does not create a transaction, PSBT, miner fee, inscription transfer, or spending authorization.</p>
+  <p class="warning">Confirm that the connected account is <code>bc1p4wz46fk45hp5crm56k4emxelln9tpuc76frn2duumlyecr9ft35qjxmadq</code>. The final Sign click is a human security boundary.</p>
+  <textarea id="message" readonly>Organa Cell Controller Claim v0.1
+Domain: organa-cell-controller-claim
+Bitcoin network: mainnet
+Coordinate: 7187.bitmap
+Controller address: bc1p4wz46fk45hp5crm56k4emxelln9tpuc76frn2duumlyecr9ft35qjxmadq
+Cell manifest: https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/organa-cell.json
+Cell manifest SHA-256: sha256:e4fbdedc8d4f4ca1b282716b8219cd64b3cff34114b1461493dff39ae44b3452
+Schema version: organa-cell-resolution-v0.1
+Version: 0.3.0
+Previous manifest SHA-256: sha256:4ce70ee51fcd3de36111fa30063fefb02132e0894855cceba6b2afd154f682fb
+Issued at UTC: 2026-07-26T07:34:38.657882+00:00
+Expires at UTC: 2026-08-02T07:34:38.657882+00:00
+
+I attest that this wallet controls the publication authority for this Organa Cell manifest. This signature does not transfer assets, authorize spending, or reveal private Organa data.</textarea>
+  <br>
+  <button id="open">Open UniSat Message Signing</button>
+  <button id="copy" type="button">Copy exact message</button>
+  <p id="status" class="note">Ready.</p>
+  <p id="result" class="result"></p>
+  <script>
+    const expectedAccount='bc1p4wz46fk45hp5crm56k4emxelln9tpuc76frn2duumlyecr9ft35qjxmadq';
+    const message=document.getElementById('message').value;
+    document.getElementById('copy').onclick=()=>navigator.clipboard.writeText(message);
+    document.getElementById('open').onclick=async()=>{
+      const status=document.getElementById('status');
+      try{
+        if(!window.unisat)throw new Error('UniSat provider not detected');
+        const accounts=await window.unisat.requestAccounts();
+        if(!accounts[0]||accounts[0]!==expectedAccount)throw new Error('Connected account does not match the declared controller address');
+        status.textContent='Controller account confirmed — opening BIP-322 Simple signing confirmation…';
+        const signature=await window.unisat.signMessage(message,'bip322-simple');
+        status.textContent='Signature returned. It still requires independent cryptographic verification.';
+        document.getElementById('result').textContent=signature;
+        navigator.clipboard.writeText(signature).catch(()=>{});
+      }catch(e){
+        status.textContent='Stopped: '+(e&&e.message?e.message:String(e));
+      }
+    };
+  </script>
+</body>
+</html>
