@@ -1,0 +1,21 @@
+{
+  "schema_version": "organa-agent-continuity-verification-v0.1",
+  "ok": true,
+  "integrity_ok": true,
+  "authenticity_status": "unanchored",
+  "missing_resources": [],
+  "changed_resources": [],
+  "unsafe_resources": [],
+  "cross_reference_errors": [],
+  "privacy_errors": [],
+  "schema_errors": [],
+  "lineage_errors": [],
+  "anchor_errors": [],
+  "agent_id": "hemi",
+  "home_cell": "7187.bitmap",
+  "lineage_status": "original",
+  "identity_sha256": "sha256:ac6f862018a55db193de44374c562d2596fd47aaff218f15175dfbd4bc7ec199",
+  "checkpoint_sha256": "sha256:72631fe4d6372ed359975ee86afa496fa3a930f98ebcfc3db63a6ae58679e22a",
+  "discovery_sha256": "sha256:988bd445b44c4d0796ead99bce512c79e32c7185a4cb364e36a169d517389414",
+  "checked_resources": 5
+}

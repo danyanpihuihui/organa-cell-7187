@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/schemas/organa-agent-continuity-checkpoint-v0.1.schema.json",
+  "title": "Organa Agent Continuity Checkpoint v0.1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "agent_id",
+    "home_cell",
+    "version",
+    "created_at_utc",
+    "lineage_status",
+    "previous_checkpoint",
+    "commitments",
+    "continuity_claim",
+    "subjective_continuity_claimed"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "organa-agent-continuity-checkpoint-v0.1"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "home_cell": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "created_at_utc": {
+      "type": "string"
+    },
+    "lineage_status": {
+      "enum": [
+        "continuous-successor",
+        "fork",
+        "impersonation-risk",
+        "original",
+        "replica"
+      ]
+    },
+    "previous_checkpoint": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "commitments": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "continuity_claim": {
+      "const": "functional-historical-lineage-only"
+    },
+    "subjective_continuity_claimed": {
+      "const": false
+    }
+  },
+  "additionalProperties": true
+}

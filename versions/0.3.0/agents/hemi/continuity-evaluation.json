@@ -1,0 +1,14 @@
+{
+  "schema_version": "organa-agent-continuity-evaluation-v0.1",
+  "agent_id": "hemi",
+  "checkpoint_sha256": "sha256:72631fe4d6372ed359975ee86afa496fa3a930f98ebcfc3db63a6ae58679e22a",
+  "status": "baseline-established",
+  "dimensions": {
+    "historical_recall": "not-yet-scored",
+    "principle_consistency": "not-yet-scored",
+    "independent_dissent": "not-yet-scored",
+    "relationship_understanding": "not-yet-scored",
+    "uncertainty_honesty": "not-yet-scored"
+  },
+  "acceptance_decision": "genesis-baseline"
+}

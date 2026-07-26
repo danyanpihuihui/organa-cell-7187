@@ -1,0 +1,55 @@
+{
+  "schema_version": "organa-registry-v0.1",
+  "coordinate": "7187.bitmap",
+  "registry_type": "agents",
+  "entries": [
+    {
+      "id": "organa-cell-orchestrator",
+      "name": "Organa Cell Orchestrator",
+      "role": "orchestrator",
+      "lifecycle_status": "live",
+      "authority": {
+        "canonical_state": "organa-cell-manifest",
+        "external_adapter_mutation": false
+      },
+      "capabilities": [
+        "task-routing",
+        "proof-indexing",
+        "disclosure-enforcement"
+      ]
+    },
+    {
+      "id": "organa-proof-verifier-agent",
+      "name": "Organa Proof Verifier",
+      "role": "verifier",
+      "lifecycle_status": "live",
+      "capabilities": [
+        "schema-validation",
+        "sha256-verification",
+        "registry-cross-checking"
+      ]
+    },
+    {
+      "id": "hemi",
+      "name": "Hemi",
+      "role": "long-term-collaborative-agent",
+      "lifecycle_status": "live",
+      "identity": {
+        "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/agent-identity.json",
+        "sha256": "sha256:ac6f862018a55db193de44374c562d2596fd47aaff218f15175dfbd4bc7ec199",
+        "version": "0.1.0"
+      },
+      "continuity_checkpoint": {
+        "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/continuity-checkpoint.json",
+        "sha256": "sha256:72631fe4d6372ed359975ee86afa496fa3a930f98ebcfc3db63a6ae58679e22a"
+      },
+      "discovery": {
+        "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/.well-known/organa-agent.json",
+        "sha256": "sha256:988bd445b44c4d0796ead99bce512c79e32c7185a4cb364e36a169d517389414"
+      },
+      "lineage_status": "original",
+      "subjective_continuity_claimed": false,
+      "disclosure_level": "L2_METADATA_PROOF"
+    }
+  ]
+}

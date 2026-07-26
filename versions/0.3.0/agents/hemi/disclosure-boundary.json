@@ -1,0 +1,38 @@
+{
+  "schema_version": "organa-agent-continuity-disclosure-v0.1",
+  "agent_id": "hemi",
+  "default_public_level": "L2_METADATA_PROOF",
+  "public_commitments_only": true,
+  "public_package_excludes": [
+    "raw memories",
+    "private relationship records",
+    "credentials and authentication tokens",
+    "private skills and unreleased methods",
+    "hidden prompts and runtime-only state"
+  ],
+  "levels": {
+    "L0_PRIVATE": [
+      "raw memory",
+      "relationship archive",
+      "private skills",
+      "runtime secrets"
+    ],
+    "L1_HASH_PROOF": [
+      "content commitments",
+      "checkpoint hash"
+    ],
+    "L2_METADATA_PROOF": [
+      "identity metadata",
+      "lineage status",
+      "evaluation status"
+    ],
+    "L3_SELECTIVE_REVEAL": [
+      "scoped redacted migration evidence"
+    ],
+    "L4_PUBLIC_PACKAGE": [
+      "identity manifest",
+      "lineage checkpoint",
+      "verification report"
+    ]
+  }
+}

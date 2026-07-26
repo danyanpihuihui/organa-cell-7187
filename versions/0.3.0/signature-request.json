@@ -1,0 +1,19 @@
+{
+  "schema_version": "organa-controller-signature-request-v0.1",
+  "coordinate": "7187.bitmap",
+  "controller_address": "bc1p4wz46fk45hp5crm56k4emxelln9tpuc76frn2duumlyecr9ft35qjxmadq",
+  "bitcoin_network": "mainnet",
+  "status": "awaiting-user-signature",
+  "signature_method": "BIP-322-simple-message-signature",
+  "message_encoding": "UTF-8",
+  "issued_at_utc": "2026-07-26T07:34:38.657882+00:00",
+  "expires_at_utc": "2026-08-02T07:34:38.657882+00:00",
+  "expiry_policy": {
+    "meaning": "signature-authorization-window",
+    "completed_signature_validity": "A signature completed and published before expires_at_utc remains a valid immutable historical claim after that timestamp.",
+    "late_signature_policy": "A signature first produced after expires_at_utc is not authorized by this request and requires a new manifest version or signature request."
+  },
+  "message": "Organa Cell Controller Claim v0.1\nDomain: organa-cell-controller-claim\nBitcoin network: mainnet\nCoordinate: 7187.bitmap\nController address: bc1p4wz46fk45hp5crm56k4emxelln9tpuc76frn2duumlyecr9ft35qjxmadq\nCell manifest: https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/organa-cell.json\nCell manifest SHA-256: sha256:e4fbdedc8d4f4ca1b282716b8219cd64b3cff34114b1461493dff39ae44b3452\nSchema version: organa-cell-resolution-v0.1\nVersion: 0.3.0\nPrevious manifest SHA-256: sha256:4ce70ee51fcd3de36111fa30063fefb02132e0894855cceba6b2afd154f682fb\nIssued at UTC: 2026-07-26T07:34:38.657882+00:00\nExpires at UTC: 2026-08-02T07:34:38.657882+00:00\n\nI attest that this wallet controls the publication authority for this Organa Cell manifest. This signature does not transfer assets, authorize spending, or reveal private Organa data.",
+  "message_sha256": "sha256:d83bef4ea95a4eb3c72409888c94748d8dff45d95495bb6ea20a01bb738fd1a9",
+  "signed_claim_output": "controller-claim.json"
+}

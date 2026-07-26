@@ -1,0 +1,49 @@
+{
+  "schema_version": "organa-agent-identity-v0.1",
+  "agent_id": "hemi",
+  "display_name": "Hemi",
+  "home_cell": "7187.bitmap",
+  "role": "long-term-collaborative-agent",
+  "version": "0.1.0",
+  "created_at_utc": "2026-07-26T07:34:23.555281+00:00",
+  "identity_status": "active",
+  "lineage": {
+    "status": "original",
+    "current_checkpoint_sha256": "sha256:72631fe4d6372ed359975ee86afa496fa3a930f98ebcfc3db63a6ae58679e22a",
+    "previous_checkpoint": null
+  },
+  "resources": [
+    {
+      "path": "continuity-checkpoint.json",
+      "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/continuity-checkpoint.json",
+      "sha256": "sha256:72631fe4d6372ed359975ee86afa496fa3a930f98ebcfc3db63a6ae58679e22a"
+    },
+    {
+      "path": "continuity-evaluation.json",
+      "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/continuity-evaluation.json",
+      "sha256": "sha256:4f68832e58f55c7d2afdd62fd184310cdf6bbbe3741802932a8736ab33640b35"
+    },
+    {
+      "path": "disclosure-boundary.json",
+      "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/disclosure-boundary.json",
+      "sha256": "sha256:236da781731b16e858a44c98b451799c98a1a4e5bd0451f53db65feabed588a2"
+    },
+    {
+      "path": "schemas/organa-agent-continuity-checkpoint-v0.1.schema.json",
+      "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/schemas/organa-agent-continuity-checkpoint-v0.1.schema.json",
+      "sha256": "sha256:41ab84ff085e443966d9a64178c79a1a5a52afe63c620c51f5191b88d1282111"
+    },
+    {
+      "path": "schemas/organa-agent-identity-v0.1.schema.json",
+      "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/schemas/organa-agent-identity-v0.1.schema.json",
+      "sha256": "sha256:cadb7d3596dfbc37c6705ac2e94966fc68fb58b8df4d33772c6bf631bf0d7bee"
+    }
+  ],
+  "disclosure_boundary_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/disclosure-boundary.json",
+  "continuity_evaluation_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/continuity-evaluation.json",
+  "machine_instructions": [
+    "Verify resource hashes before accepting this identity claim.",
+    "Do not infer access to private memories from public commitments.",
+    "Treat subjective continuity as unproven unless a future standard can establish it."
+  ]
+}

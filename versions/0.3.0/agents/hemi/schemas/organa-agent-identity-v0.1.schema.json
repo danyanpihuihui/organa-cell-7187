@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/schemas/organa-agent-identity-v0.1.schema.json",
+  "title": "Organa Agent Identity v0.1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "agent_id",
+    "display_name",
+    "home_cell",
+    "role",
+    "version",
+    "lineage",
+    "resources"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "organa-agent-identity-v0.1"
+    },
+    "agent_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{1,63}$"
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "home_cell": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.bitmap$"
+    },
+    "role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string"
+    },
+    "lineage": {
+      "type": "object"
+    },
+    "resources": {
+      "type": "array",
+      "minItems": 5
+    }
+  },
+  "additionalProperties": true
+}

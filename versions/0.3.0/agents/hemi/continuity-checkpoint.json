@@ -1,0 +1,18 @@
+{
+  "schema_version": "organa-agent-continuity-checkpoint-v0.1",
+  "agent_id": "hemi",
+  "home_cell": "7187.bitmap",
+  "version": "0.1.0",
+  "created_at_utc": "2026-07-26T07:34:23.555281+00:00",
+  "lineage_status": "original",
+  "previous_checkpoint": null,
+  "commitments": {
+    "identity_principles": "sha256:1d765f982db0c9bcb4ade0cbb4e9928e3377ea0583f2c1dd10780063919e4cb6",
+    "procedural_skills": "sha256:f4a5dfbc900fa58516e4857bcc4d5e71b4608c82503648f69e68bd3b844584f9",
+    "relationship_history": "sha256:4d358e0589833c586fb5ccadadfe9c5cf27e61a709224226a3039b5c0afd97f2",
+    "semantic_memory": "sha256:7c7af868b98b1685bc8006fc29787dee8675ae282a1bbdc5d22d1505203174b7"
+  },
+  "continuity_claim": "functional-historical-lineage-only",
+  "subjective_continuity_claimed": false,
+  "claim_boundary": "This checkpoint proves declared historical and functional lineage. It does not prove transfer or persistence of subjective experience."
+}
