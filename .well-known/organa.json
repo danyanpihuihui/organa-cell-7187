@@ -4,24 +4,24 @@
   "cell_type": "organa-cell",
   "state_semantics_url": "https://danyanpihuihui.github.io/organa-cell-7187/organa-state-semantics-v0.1.json",
   "current_manifest": {
-    "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/organa-cell.json",
-    "sha256": "sha256:4ce70ee51fcd3de36111fa30063fefb02132e0894855cceba6b2afd154f682fb",
-    "version": "0.2.0",
+    "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/organa-cell.json",
+    "sha256": "sha256:e4fbdedc8d4f4ca1b282716b8219cd64b3cff34114b1461493dff39ae44b3452",
+    "version": "0.3.0",
     "lifecycle_status": "live"
   },
   "controller_claim": {
     "status": "signed",
-    "signature_request_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/signature-request.json",
-    "signature_request_sha256": "sha256:6c81219c34b08ae98afec26b43aa1831d75d15cf3d1677c7f5e52653fb3b33ce",
-    "signed_claim_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/controller-claim.json",
-    "signed_claim_sha256": "sha256:6d1ceecd5dcdf9f34fdc2b6072707698dc2079ca78d6f16e353ed6524dbb060f",
+    "signature_request_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/signature-request.json",
+    "signature_request_sha256": "sha256:bd97fb1887b2abcb31150c3050a356acffbdd1ed68e48d40ae260647ed47cb3e",
+    "signed_claim_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/controller-claim.json",
+    "signed_claim_sha256": "sha256:0dce2f6bb23dcda6e36900ebee396184e8f823bb8021d7d5d522af3ab22e002b",
     "signature_method": "BIP-322-simple-message-signature",
     "signature_valid": true
   },
   "registries": {
-    "agents": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/agent-registry.json",
-    "services": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/service-registry.json",
-    "proofs": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.2.0/proof-index.json"
+    "agents": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agent-registry.json",
+    "services": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/service-registry.json",
+    "proofs": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/proof-index.json"
   },
   "state_semantics": {
     "canonical_state_source": ".well-known/organa.json",
