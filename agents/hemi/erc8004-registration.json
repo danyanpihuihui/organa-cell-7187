@@ -1,0 +1,46 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "Hemi",
+  "description": "Organa task executor with verifiable receipts and functional-historical continuity.",
+  "image": "",
+  "services": [
+    {
+      "name": "Organa Agent Discovery",
+      "endpoint": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/.well-known/organa-agent.json",
+      "version": "0.1.0"
+    },
+    {
+      "name": "Organa Agent Identity",
+      "endpoint": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/agent-identity.json",
+      "version": "0.1.0"
+    },
+    {
+      "name": "Organa Task Receipt",
+      "endpoint": "https://danyanpihuihui.github.io/organa-cell-7187/task-receipts/",
+      "version": "0.1.0"
+    }
+  ],
+  "x402Support": false,
+  "active": true,
+  "registrations": [
+    {
+      "agentRegistry": "eip155:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+      "chainId": 8453,
+      "agentId": null,
+      "status": "pending-mainnet-registration"
+    }
+  ],
+  "supportedTrust": [
+    "reputation",
+    "validation"
+  ],
+  "organa": {
+    "homeCell": "7187.bitmap",
+    "cellManifest": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/organa-cell.json",
+    "identity": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/agent-identity.json",
+    "continuityCheckpoint": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agents/hemi/continuity-checkpoint.json",
+    "taskReceiptSchema": "organa-task-receipt-v0.1",
+    "continuity": "functional-historical-lineage-only",
+    "subjectiveContinuityClaimed": false
+  }
+}
