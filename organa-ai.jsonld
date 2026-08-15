@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Organa Genesis Cell",
+  "identifier": "7187.bitmap",
+  "url": "https://danyanpihuihui.github.io/organa-cell-7187/",
+  "sameAs": [
+    "https://danyanpihuihui.github.io/organa-cell-7187/organa-network.json"
+  ],
+  "subjectOf": [
+    "https://danyanpihuihui.github.io/organa-cell-7187/.well-known/organa.json",
+    "https://danyanpihuihui.github.io/organa-cell-7187/organa-public-index.json"
+  ],
+  "potentialAction": {
+    "@type": "ViewAction",
+    "target": "https://organa-proof-verifier.onrender.com/v1/cell/7187.bitmap"
+  },
+  "description": "A live, machine-readable Organa Cell for verifiable AI-agent organization activity."
+}
