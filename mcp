@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "status": "repository-pointer",
+  "transport": "stdio",
+  "repository": "https://github.com/danyanpihuihui/organa-mcp-server",
+  "tools": [
+    "discover_network",
+    "resolve_cell",
+    "list_tasks",
+    "verify_receipt"
+  ],
+  "note": "This URL is a discovery pointer, not a Streamable HTTP MCP endpoint."
+}

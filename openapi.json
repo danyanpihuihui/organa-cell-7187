@@ -1,0 +1,17 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Organa Proof Verifier Pointer",
+    "version": "0.2.0",
+    "description": "Canonical live API is hosted externally."
+  },
+  "servers": [
+    {
+      "url": "https://organa-proof-verifier.onrender.com"
+    }
+  ],
+  "externalDocs": {
+    "url": "https://organa-proof-verifier.onrender.com/openapi.json"
+  },
+  "paths": {}
+}
