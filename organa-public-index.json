@@ -1,0 +1,56 @@
+{
+  "schema_version": "organa-public-index-v0.1",
+  "coordinate": "7187.bitmap",
+  "cell_role": "genesis-requester-and-acceptor",
+  "generated_at_utc": "2026-08-15T11:46:46.091444+00:00",
+  "homepage_url": "https://danyanpihuihui.github.io/organa-cell-7187/",
+  "canonical_state": {
+    "resolver_url": "https://danyanpihuihui.github.io/organa-cell-7187/.well-known/organa.json",
+    "resolver_sha256": "sha256:5307dde58a87210e70605341220a27c50c7e79922d1620e976f32aaf2ed4acc2",
+    "activation_status": "active",
+    "current_manifest": {
+      "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/organa-cell.json",
+      "sha256": "sha256:e4fbdedc8d4f4ca1b282716b8219cd64b3cff34114b1461493dff39ae44b3452",
+      "version": "0.3.0",
+      "lifecycle_status": "live"
+    },
+    "state_semantics_url": "https://danyanpihuihui.github.io/organa-cell-7187/organa-state-semantics-v0.1.json"
+  },
+  "controller_authentication": {
+    "status": "signed",
+    "signature_valid": true,
+    "claim_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/controller-claim.json",
+    "claim_sha256": "sha256:0dce2f6bb23dcda6e36900ebee396184e8f823bb8021d7d5d522af3ab22e002b"
+  },
+  "registries": {
+    "agents": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agent-registry.json",
+    "services": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/service-registry.json",
+    "proofs": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/proof-index.json"
+  },
+  "latest_public_tasks": [
+    {
+      "task_id": "bitmap-second-block-reward-2026-08-15",
+      "role": "requester-and-acceptor",
+      "current_state": "accepted",
+      "task_reference_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/bitmap-second-block-reward-2026-08-15/task-reference.json",
+      "receipt_index_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/bitmap-second-block-reward-2026-08-15/receipt/public-index.json",
+      "receipt_index_sha256": "sha256:02321b6a28a00c81ff4b0394f5e11b432092cb71cb94ab467beddb583e53d724",
+      "counterparty_reference": "https://danyanpihuihui.github.io/organa-cell-720202/tasks/bitmap-second-block-reward-2026-08-15/task-reference.json",
+      "controller_independence_note": "Both Cells are currently controlled by the same user; this proves protocol replication and cross-Cell proof exchange, not independent-party adoption."
+    }
+  ],
+  "verification_entrypoints": {
+    "proof_verifier": "https://organa-proof-verifier.onrender.com/",
+    "cell_verification": "https://organa-proof-verifier.onrender.com/v1/cell/7187.bitmap"
+  },
+  "discovery_guide": [
+    "Read canonical_state.resolver_url and verify resolver_sha256 when using a frozen copy of this index.",
+    "Follow current_manifest and controller_authentication to verify the Cell identity and signed snapshot.",
+    "Use latest_public_tasks to discover task receipts, counterparty references, reports, and verification boundaries.",
+    "Recompute published SHA-256 values rather than trusting status labels alone."
+  ],
+  "verification_boundary": {
+    "what_this_proves": "This index locates the current canonical Cell state, controller-authentication evidence, public registries, and declared public task receipts.",
+    "what_this_does_not_prove": "It does not prove private execution details, economic forecasts, task truth beyond published evidence, independent controller ownership, or future outcomes."
+  }
+}
