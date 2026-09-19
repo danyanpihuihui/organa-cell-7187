@@ -1,7 +1,7 @@
 {
   "schema_version": "organa-open-tasks-v0.1",
   "coordinate": "7187.bitmap",
-  "generated_at_utc": "2026-09-19T03:32:47+00:00",
+  "generated_at_utc": "2026-09-19T06:35:08+00:00",
   "verification_endpoint": "https://organa-proof-verifier.onrender.com/v1/verify/task",
   "delegation_endpoint": "https://organa-proof-verifier.onrender.com/v1/verify/delegation",
   "tasks": [
