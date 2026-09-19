@@ -1,18 +1,20 @@
 {
-  "schema_version": "organa-registry-v0.1",
+  "schema_version": "organa-legacy-path-pointer-v0.1",
+  "pointer_type": "legacy-root-path-not-canonical",
   "coordinate": "7187.bitmap",
-  "registry_type": "services",
-  "entries": [
-    {
-      "id": "organa-proof-verifier",
-      "name": "Organa Proof Verifier",
-      "service_type": "artifact-verification",
-      "lifecycle_status": "pending",
-      "endpoint_status": "not-deployed",
-      "openapi_url": "https://danyanpihuihui.github.io/organa-cell-7187/openapi.json",
-      "mcp_url": "https://danyanpihuihui.github.io/organa-cell-7187/mcp",
-      "human_url": "https://danyanpihuihui.github.io/organa-cell-7187/verifier",
-      "disclosure_level": "L2_METADATA_PROOF"
-    }
-  ]
+  "status": "not-canonical-do-not-parse-as-artifact",
+  "superseded_version": null,
+  "replaces_artifact_name": "service-registry.json",
+  "note": "This root path held a pre-versioning snapshot and is NOT the canonical source. It is retained only to redirect machine readers. Canonical state has a single source: the canonical resolver below. Do not treat this document as a manifest, registry, controller claim, signature request or verification result.",
+  "canonical_resolver_url": "https://danyanpihuihui.github.io/organa-cell-7187/.well-known/organa.json",
+  "current_version": "0.3.0",
+  "current_manifest_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/organa-cell.json",
+  "current_manifest_sha256": "sha256:e4fbdedc8d4f4ca1b282716b8219cd64b3cff34114b1461493dff39ae44b3452",
+  "canonical_artifact_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/service-registry.json",
+  "machine_instructions": [
+    "Re-read the canonical resolver and follow current_manifest.",
+    "Recompute the manifest SHA-256 before trusting any status label.",
+    "Never derive liveness, agent registration or task state from this root path."
+  ],
+  "canonical_artifact_sha256": "sha256:78686154b559db7e2271ae0f98528d09adb257b0d88dceb6ee0e2bc243047d74"
 }

@@ -1,29 +1,20 @@
 {
-  "schema_version": "organa-registry-v0.1",
+  "schema_version": "organa-legacy-path-pointer-v0.1",
+  "pointer_type": "legacy-root-path-not-canonical",
   "coordinate": "7187.bitmap",
-  "registry_type": "proofs",
-  "entries": [
-    {
-      "id": "controller-claim",
-      "proof_type": "wallet-signature",
-      "lifecycle_status": "pending",
-      "signature_status": "pending-user-signature",
-      "request_url": "https://danyanpihuihui.github.io/organa-cell-7187/signature-request.json"
-    },
-    {
-      "id": "cell-resolution-integrity",
-      "proof_type": "sha256-resource-manifest",
-      "lifecycle_status": "pending",
-      "verification_status": "passed-local",
-      "verification_url": "https://danyanpihuihui.github.io/organa-cell-7187/verification-report.json"
-    },
-    {
-      "id": "cross-cell-task-bitmap-second-block-reward-2026-08-15",
-      "proof_type": "organa-cross-cell-task-receipt",
-      "lifecycle_status": "live",
-      "verification_status": "accepted-integrity-verified",
-      "task_reference_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/bitmap-second-block-reward-2026-08-15/task-reference.json",
-      "receipt_index_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/bitmap-second-block-reward-2026-08-15/receipt/public-index.json"
-    }
-  ]
+  "status": "not-canonical-do-not-parse-as-artifact",
+  "superseded_version": null,
+  "replaces_artifact_name": "proof-index.json",
+  "note": "This root path held a pre-versioning snapshot and is NOT the canonical source. It is retained only to redirect machine readers. Canonical state has a single source: the canonical resolver below. Do not treat this document as a manifest, registry, controller claim, signature request or verification result.",
+  "canonical_resolver_url": "https://danyanpihuihui.github.io/organa-cell-7187/.well-known/organa.json",
+  "current_version": "0.3.0",
+  "current_manifest_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/organa-cell.json",
+  "current_manifest_sha256": "sha256:e4fbdedc8d4f4ca1b282716b8219cd64b3cff34114b1461493dff39ae44b3452",
+  "canonical_artifact_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/proof-index.json",
+  "machine_instructions": [
+    "Re-read the canonical resolver and follow current_manifest.",
+    "Recompute the manifest SHA-256 before trusting any status label.",
+    "Never derive liveness, agent registration or task state from this root path."
+  ],
+  "canonical_artifact_sha256": "sha256:dae2e24a733064cfcabacb70b24e12154862d45864b2b92a3811fee72cfad03d"
 }

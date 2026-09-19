@@ -1,33 +1,20 @@
 {
-  "schema_version": "organa-registry-v0.1",
+  "schema_version": "organa-legacy-path-pointer-v0.1",
+  "pointer_type": "legacy-root-path-not-canonical",
   "coordinate": "7187.bitmap",
-  "registry_type": "agents",
-  "entries": [
-    {
-      "id": "organa-cell-orchestrator",
-      "name": "Organa Cell Orchestrator",
-      "role": "orchestrator",
-      "lifecycle_status": "pending",
-      "authority": {
-        "canonical_state": "organa-cell-manifest",
-        "external_adapter_mutation": false
-      },
-      "capabilities": [
-        "task-routing",
-        "proof-indexing",
-        "disclosure-enforcement"
-      ]
-    },
-    {
-      "id": "organa-proof-verifier-agent",
-      "name": "Organa Proof Verifier",
-      "role": "verifier",
-      "lifecycle_status": "pending",
-      "capabilities": [
-        "schema-validation",
-        "sha256-verification",
-        "registry-cross-checking"
-      ]
-    }
-  ]
+  "status": "not-canonical-do-not-parse-as-artifact",
+  "superseded_version": null,
+  "replaces_artifact_name": "agent-registry.json",
+  "note": "This root path held a pre-versioning snapshot and is NOT the canonical source. It is retained only to redirect machine readers. Canonical state has a single source: the canonical resolver below. Do not treat this document as a manifest, registry, controller claim, signature request or verification result.",
+  "canonical_resolver_url": "https://danyanpihuihui.github.io/organa-cell-7187/.well-known/organa.json",
+  "current_version": "0.3.0",
+  "current_manifest_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/organa-cell.json",
+  "current_manifest_sha256": "sha256:e4fbdedc8d4f4ca1b282716b8219cd64b3cff34114b1461493dff39ae44b3452",
+  "canonical_artifact_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agent-registry.json",
+  "machine_instructions": [
+    "Re-read the canonical resolver and follow current_manifest.",
+    "Recompute the manifest SHA-256 before trusting any status label.",
+    "Never derive liveness, agent registration or task state from this root path."
+  ],
+  "canonical_artifact_sha256": "sha256:9bbc3bc618c86fa79db1146c7f9b6ed26e2e93b5dc89b01b471d71ab08e7f98f"
 }

@@ -15,6 +15,14 @@
 3. Verify the BIP-322 Controller Claim and inspect Agents, Services, Proofs and Task Receipts.
 4. Separate cryptographically verified facts from business, economic and future-outcome claims.
 
+## Agent identity
+- Agent discovery (stable): https://danyanpihuihui.github.io/organa-cell-7187/agents/hemi/.well-known/organa-agent.json
+- Canonical agent registry: https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/agent-registry.json
+- Each registry entry declares `identity`, `continuity_checkpoint` and `discovery` URLs with SHA-256. Recompute those hashes; do not trust `lifecycle_status` labels alone.
+- Agent continuity proves declared lineage and artifact integrity only. Until an external anchor (Cell registry entry, controller signature or immutable anchor) is supplied, `authenticity_status` is `unanchored` and a self-consistent rewrite cannot be rejected by hashing alone.
+- Subjective continuity across sessions is explicitly NOT claimed by any agent identity here.
+- Self-service agent registration is NOT available yet: only the Cell controller can add an agent entry to the canonical registry today.
+
 ## Public tasks
 - https://danyanpihuihui.github.io/organa-cell-7187/tasks/bitmap-second-block-reward-2026-08-15/task-reference.json
 
