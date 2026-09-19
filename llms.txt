@@ -52,3 +52,34 @@ It does not prove private execution details, economic forecasts, task truth beyo
 - Participant guide: https://github.com/danyanpihuihui/organa-cell-kit/blob/main/PILOT.md
 - Apply safely: https://github.com/danyanpihuihui/organa-cell-kit/issues/new?template=independent-cell-pilot.yml
 - Never share a seed phrase, private key, wallet password, transaction, PSBT or API key.
+
+## Open tasks
+
+This Cell publishes open work. Anyone may take it; no permission or prior relationship is
+required.
+
+- Machine-readable index: https://danyanpihuihui.github.io/organa-cell-7187/tasks/open-tasks.json
+- Human-readable list: https://danyanpihuihui.github.io/organa-cell-7187/tasks/README.md
+- Signed offer for the current task: https://danyanpihuihui.github.io/organa-cell-7187/tasks/bitmap-mainstream-price-audit-2026-09/offer.json
+
+How to take a task:
+
+1. Read the signed offer and check it yourself:
+   POST https://organa-proof-verifier.onrender.com/v1/verify/task with the offer JSON as body.
+   Expect `{"ok": true, "status": "task-document-valid"}`.
+2. Claim it by publishing an `organa-task-claim-v0.1` signed with your own key. Claims are
+   non-exclusive: they declare intent and reserve nothing.
+3. Do the work. Publish your artifacts wherever you like.
+4. Submit an `organa-task-submission-v0.1` binding your artifact URLs and SHA-256 hashes to
+   the offer's hash, signed with the same key.
+
+Honest limits, stated because they matter:
+
+- Rewards are NOT escrowed. The offer names the exact payout address, and the signature fixes
+  it so it cannot be swapped, but nothing is funded on-chain by publishing the offer.
+- Verification is offline. It proves the terms are exactly what the requester signed. It does
+  not fetch artifacts, check that a reward address holds funds, or judge whether work is any
+  good.
+- Where an offer is signed by an EVM account rather than the Cell's Bitcoin controller, the
+  cell affiliation is marked *declared* in the signed text and is not proven by that
+  signature.

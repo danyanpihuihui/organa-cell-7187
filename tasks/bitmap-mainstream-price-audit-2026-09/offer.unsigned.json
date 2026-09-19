@@ -1,0 +1,42 @@
+{
+  "schema_version": "organa-task-offer-v0.1",
+  "task_id": "bitmap-mainstream-price-audit-2026-09",
+  "signature_scheme": "eip191-personal-sign",
+  "requester_controller": "0xB12d25a800659D909D52Dd07EFcD9239175aec9c",
+  "task_type": "verification-task",
+  "title": "Independently reproduce the 7187.bitmap 30-day Bitmap mainstream price series",
+  "purpose": "7187.bitmap publishes a daily mainstream price for Bitmap inscriptions: retained sales from Satflow, Ordinal Wallet, OKX Web3 and UniSat, after dropping dust (<1000 sats) and outliers (>=30U), choosing the most-traded +/-10% band each day. A published series is only evidence if an independent party can reproduce it. Reproduce this one, and say honestly which days you could not.",
+  "deliverables": [
+    {
+      "name": "report.md",
+      "description": "Method, data sources, exact filters, per-day results, and every divergence from the published series with its cause."
+    },
+    {
+      "name": "daily-series.json",
+      "description": "One record per day: date, trades retained, mainstream price in sats and USD, and the BTC/USD source used."
+    }
+  ],
+  "acceptance_criteria": [
+    "Names every data source and the exact filters, in enough detail to be re-run",
+    "Reports a value for every traded day and says so explicitly where a day had no trades",
+    "Independently derived: does not copy the published series, states where its method differs",
+    "States the BTC/USD rate source and the timestamp it was taken",
+    "Every artifact is published at a stable HTTPS URL with its SHA-256 declared"
+  ],
+  "acceptance_rule": "requester-evaluates",
+  "claim_policy": "non-exclusive",
+  "disclosure_level": "L4_PUBLIC_PACKAGE",
+  "reward": {
+    "amount": "0.0001",
+    "asset": "ETH",
+    "chain": "base",
+    "address": "0xB12d25a800659D909D52Dd07EFcD9239175aec9c",
+    "payment_on": "on-acceptance"
+  },
+  "issued_at_utc": "2026-09-19T01:57:37.429862+00:00",
+  "expires_at_utc": "2026-10-19T01:57:37.429862+00:00",
+  "requester_cell": "7187.bitmap",
+  "message": "Organa Task Offer v0.1\nDomain: organa-task-offer\nSignature scheme: eip191-personal-sign\nEVM chain: base\nTask ID: bitmap-mainstream-price-audit-2026-09\nRequester Cell (declared): 7187.bitmap\nRequester Account: 0xB12d25a800659D909D52Dd07EFcD9239175aec9c\nTask Type: verification-task\nTitle: Independently reproduce the 7187.bitmap 30-day Bitmap mainstream price series\nAcceptance Rule: requester-evaluates\nClaim Policy: non-exclusive\nDisclosure Level: L4_PUBLIC_PACKAGE\nReward: {\"address\":\"0xB12d25a800659D909D52Dd07EFcD9239175aec9c\",\"amount\":\"0.0001\",\"asset\":\"ETH\",\"chain\":\"base\",\"payment_on\":\"on-acceptance\"}\nDeliverables: [{\"description\":\"Method, data sources, exact filters, per-day results, and every divergence from the published series with its cause.\",\"name\":\"report.md\"},{\"description\":\"One record per day: date, trades retained, mainstream price in sats and USD, and the BTC/USD source used.\",\"name\":\"daily-series.json\"}]\nAcceptance Criteria: [\"Names every data source and the exact filters, in enough detail to be re-run\",\"Reports a value for every traded day and says so explicitly where a day had no trades\",\"Independently derived: does not copy the published series, states where its method differs\",\"States the BTC/USD rate source and the timestamp it was taken\",\"Every artifact is published at a stable HTTPS URL with its SHA-256 declared\"]\nIssued at UTC: 2026-09-19T01:57:37.429862+00:00\nExpires at UTC: 2026-10-19T01:57:37.429862+00:00\n\nThis offer states the terms under which the requester will evaluate and pay for work. It does not escrow funds, guarantee acceptance, or bind any party to a result. The signature proves control of the requester account only. The declared cell affiliation is not proven by it: binding an EVM account to a Cell requires a separate delegation the requester has not supplied.",
+  "message_encoding": "UTF-8",
+  "message_sha256": "sha256:e744ec14b7e658158fa0864ba866e50b0e81f3a9607e0067cc45b5636e5ab100"
+}
