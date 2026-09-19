@@ -1,11 +1,9 @@
 {
   "schema_version": "organa-open-tasks-v0.1",
   "coordinate": "7187.bitmap",
-  "generated_at_utc": "2026-09-19T03:05:00+00:00",
+  "generated_at_utc": "2026-09-19T03:32:47+00:00",
   "verification_endpoint": "https://organa-proof-verifier.onrender.com/v1/verify/task",
   "delegation_endpoint": "https://organa-proof-verifier.onrender.com/v1/verify/delegation",
-  "delegation_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/delegations/7187-base-account.json",
-  "delegation_sha256": "sha256:496730728c84d6947d1c4de6c93d6aa3e9b702c7ae6e50e3a9f2810fd9013013",
   "tasks": [
     {
       "task_id": "bitmap-mainstream-price-audit-2026-09",
@@ -22,12 +20,18 @@
       "acceptance_rule": "requester-evaluates",
       "claim_policy": "non-exclusive",
       "signature_scheme": "eip191-personal-sign",
+      "expires_at_utc": "2026-10-19T02:56:57.626633+00:00",
+      "payout_address": "0xB12d25a800659D909D52Dd07EFcD9239175aec9c",
+      "requester_account": "0xB12d25a800659D909D52Dd07EFcD9239175aec9c",
       "cell_authority": {
         "mode": "cell-account-delegation",
         "status": "delegation-published-pending-reader-verification",
-        "note": "The requester account is named in a delegation signed by the Cell controller. Verify the delegation yourself at delegation_url; this index does not carry or check it."
-      },
-      "expires_at_utc": "2026-10-19T02:56:57.626633+00:00"
+        "note": "The requester account is named in a delegation signed by the Cell controller. Verify the delegation yourself at delegation_url; this index does not carry or check it.",
+        "delegation_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/delegations/7187-base-account.json",
+        "delegation_sha256": "sha256:496730728c84d6947d1c4de6c93d6aa3e9b702c7ae6e50e3a9f2810fd9013013"
+      }
     }
-  ]
+  ],
+  "delegation_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/delegations/7187-base-account.json",
+  "delegation_sha256": "sha256:496730728c84d6947d1c4de6c93d6aa3e9b702c7ae6e50e3a9f2810fd9013013"
 }
