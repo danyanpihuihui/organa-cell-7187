@@ -1,38 +1,33 @@
 {
   "schema_version": "organa-open-tasks-v0.1",
-  "cell": "7187.bitmap",
-  "generated_at_utc": "2026-09-19T01:57:37.429862+00:00",
-  "note": "Open work published by this Cell. Each entry is signed by the party offering it; verify with POST /v1/verify/task before acting. A verified offer proves who committed to these terms, not that the reward is escrowed or funded.",
+  "coordinate": "7187.bitmap",
+  "generated_at_utc": "2026-09-19T03:05:00+00:00",
   "verification_endpoint": "https://organa-proof-verifier.onrender.com/v1/verify/task",
+  "delegation_endpoint": "https://organa-proof-verifier.onrender.com/v1/verify/delegation",
+  "delegation_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/delegations/7187-base-account.json",
+  "delegation_sha256": "sha256:496730728c84d6947d1c4de6c93d6aa3e9b702c7ae6e50e3a9f2810fd9013013",
   "tasks": [
     {
       "task_id": "bitmap-mainstream-price-audit-2026-09",
       "state": "open",
-      "title": "Independently reproduce the 7187.bitmap 30-day Bitmap mainstream price series",
-      "task_type": "verification-task",
       "offer_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/bitmap-mainstream-price-audit-2026-09/offer.json",
-      "offer_file_sha256": "sha256:d0fbb04ae3b41aa9d32265e2db778259fd25e5daf0cecc52cffbe8aa81cf1463",
-      "signature_scheme": "eip191-personal-sign",
-      "requester": "0xB12d25a800659D909D52Dd07EFcD9239175aec9c",
-      "requester_cell_declared": "7187.bitmap",
-      "requester_cell_status": "declared, not proven by this signature",
+      "offer_sha256": "sha256:8e597cdc006a4b73542c1eb64e6aed5e6568607f1ed2bb2fff1dacd764fef764",
+      "title": "Independently reproduce the 7187.bitmap 30-day Bitmap mainstream price series",
       "reward": {
         "amount": "0.0001",
         "asset": "ETH",
         "chain": "base",
-        "address": "0xB12d25a800659D909D52Dd07EFcD9239175aec9c",
-        "payment_on": "on-acceptance"
+        "reward_escrowed": false
       },
-      "reward_escrowed": false,
-      "claim_policy": "non-exclusive",
       "acceptance_rule": "requester-evaluates",
-      "expires_at_utc": "2026-10-19T01:57:37.429862+00:00",
-      "deliverables": [
-        "report.md",
-        "daily-series.json"
-      ],
-      "how_to_claim": "Build an organa-task-claim-v0.1, sign it with your own key, and publish it. Claims are non-exclusive: they declare intent and reserve nothing. The requester pays on acceptance.",
-      "how_to_submit": "Publish your artifacts wherever you like, then build an organa-task-submission-v0.1 binding their URLs and SHA-256 to this offer's hash and sign it. Artifacts are not uploaded here."
+      "claim_policy": "non-exclusive",
+      "signature_scheme": "eip191-personal-sign",
+      "cell_authority": {
+        "mode": "cell-account-delegation",
+        "status": "delegation-published-pending-reader-verification",
+        "note": "The requester account is named in a delegation signed by the Cell controller. Verify the delegation yourself at delegation_url; this index does not carry or check it."
+      },
+      "expires_at_utc": "2026-10-19T02:56:57.626633+00:00"
     }
   ]
 }
