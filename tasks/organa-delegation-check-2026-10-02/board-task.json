@@ -1,0 +1,24 @@
+{
+  "schema_version": "organa-board-task-notice-v0.1",
+  "signed": false,
+  "authority": "base-chain-task-created-event",
+  "note": "This notice is not a Cell signature. The task exists because TaskCreated was emitted by the board. B12d cannot speak for 7187.bitmap.",
+  "task_id": "0x38ee9c3651c5a1e6647e72c08383760d7256d5e4ec5e324688fd3e7406cdabfa",
+  "spec_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/organa-delegation-check-2026-10-02/spec.json",
+  "spec_hash": "0x73ee620df701955c76d962afa62f736bcfcb120e463918aa67691490edacd46a",
+  "board": "0x6b879e224310404e879213f82b62b3c95b88a89b",
+  "chain_id": 8453,
+  "requester": "0xB12d25a800659D909D52Dd07EFcD9239175aec9c",
+  "create_tx": "0x4cb44236f5e7c5bcb8cc16373dc951de925c8f94e524b6b58c60661d6c6dcff3",
+  "budget_wei": "40000000000000",
+  "worker_bond_wei": "10000000000000",
+  "max_tolerance_bps": 0,
+  "commit_deadline_unix": 1791023321,
+  "reveal_deadline_unix": 1791109721,
+  "question": "How many scopes are listed in the current public cashier delegation?",
+  "expected_answer": 2,
+  "workers_needed": 2,
+  "workers_must_not_be": [
+    "0xB12d25a800659D909D52Dd07EFcD9239175aec9c"
+  ]
+}

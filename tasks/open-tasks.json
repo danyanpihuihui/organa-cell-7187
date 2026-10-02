@@ -33,5 +33,21 @@
     }
   ],
   "delegation_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/delegations/7187-base-account.json",
-  "delegation_sha256": "sha256:496730728c84d6947d1c4de6c93d6aa3e9b702c7ae6e50e3a9f2810fd9013013"
+  "delegation_sha256": "sha256:496730728c84d6947d1c4de6c93d6aa3e9b702c7ae6e50e3a9f2810fd9013013",
+  "current_board_task": {
+    "task_id": "0x38ee9c3651c5a1e6647e72c08383760d7256d5e4ec5e324688fd3e7406cdabfa",
+    "notice_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/organa-delegation-check-2026-10-02/board-task.json",
+    "spec_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/organa-delegation-check-2026-10-02/spec.json",
+    "create_tx": "0x4cb44236f5e7c5bcb8cc16373dc951de925c8f94e524b6b58c60661d6c6dcff3",
+    "status": "open-for-commit",
+    "reward_escrowed": true,
+    "budget_wei": "40000000000000"
+  },
+  "superseded_signed_offers": [
+    {
+      "task_id": "bitmap-mainstream-price-audit-2026-09",
+      "status": "do-not-use",
+      "reason": "Its delegation 7187-base-account was revoked on 2026-10-02. The signed offer file is unchanged, but it no longer authorises anyone to speak for 7187.bitmap."
+    }
+  ]
 }

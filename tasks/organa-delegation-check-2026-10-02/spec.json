@@ -1,0 +1,24 @@
+{
+  "schema_version": "organa-numeric-task-spec-v1",
+  "task_class": "A",
+  "task_id_prefix": "organa-delegation-check-2026-10-02",
+  "title": "Count the scopes on the current public 7187 cashier delegation",
+  "question": "How many scopes are listed in the current public cashier delegation for 7187.bitmap?",
+  "unit": "count",
+  "output": {
+    "type": "uint256",
+    "rounding": "exact-integer"
+  },
+  "source": {
+    "url": "https://danyanpihuihui.github.io/organa-cell-7187/delegations/7187-base-account-cashier.json",
+    "field": "scopes"
+  },
+  "method": "Fetch the published cashier delegation. Count the strings in scopes. Do not use the revoked 7187-base-account delegation. The expected count is the length of that array.",
+  "expected_answer": 2,
+  "tolerance_bps_default": 0,
+  "windows": {
+    "commit_seconds": 86400,
+    "reveal_seconds": 86400
+  },
+  "acceptance": "Two workers who are not the requester reveal the integer 2. The board then splits the locked ETH. Anything else refunds the budget."
+}

@@ -1,5 +1,21 @@
 # Open tasks published by 7187.bitmap
 
+## Current board task (2026-10-02)
+
+B12d locked 0.00004 ETH on Base. This is a cashier action, not speech for the Cell.
+
+- question: count the scopes in the current cashier delegation; answer is 2
+- board: `0x6b879e224310404e879213f82b62b3c95b88a89b`
+- task: `0x38ee9c3651c5a1e6647e72c08383760d7256d5e4ec5e324688fd3e7406cdabfa`
+- create tx: `0x4cb44236f5e7c5bcb8cc16373dc951de925c8f94e524b6b58c60661d6c6dcff3`
+- commit deadline: 2026-10-03 10:28:41 UTC
+- reveal deadline: 2026-10-04 10:28:41 UTC
+- two workers other than B12d must commit and reveal
+
+Notice: [`board-task.json`](./organa-delegation-check-2026-10-02/board-task.json)
+
+The September signed offer below pointed at delegation `7187-base-account`. That delegation was revoked. Do not use it to speak for this Cell. Its signed file is unchanged.
+
 This Cell has published 1 open task. Anyone may work on it; nobody needs permission.
 
 Generated at 2026-09-19T06:35:08+00:00 from the signed offers themselves. Do not edit by hand - run `scripts/publish_open_tasks.py --apply`.
