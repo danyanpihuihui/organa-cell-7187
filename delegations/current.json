@@ -1,0 +1,32 @@
+{
+  "schema_version": "organa-current-delegations-v0.1",
+  "coordinate": "7187.bitmap",
+  "current": {
+    "delegation_id": "7187-base-account-cashier",
+    "url": "https://danyanpihuihui.github.io/organa-cell-7187/delegations/7187-base-account-cashier.json",
+    "sha256": "sha256:3ae74a0875e3bc02a35be417403c8bf78c9c5caf7c66e1c7f7cfde15c8ededde",
+    "scopes": [
+      "publish-tasks",
+      "receive-payment"
+    ],
+    "status": "signed-not-yet-the-only-authority"
+  },
+  "revocations": [
+    {
+      "delegation_id": "7187-base-account",
+      "url": "https://danyanpihuihui.github.io/organa-cell-7187/delegations/7187-base-account.revocation.json",
+      "sha256": "sha256:46623bc5fd40d5c225a4c9c1bea18d6635e349d6202c83da46011af3eb8bb010",
+      "revokes_sha256": "sha256:496730728c84d6947d1c4de6c93d6aa3e9b702c7ae6e50e3a9f2810fd9013013",
+      "status": "signed-not-yet-effective-until-published"
+    }
+  ],
+  "historical": [
+    {
+      "delegation_id": "7187-base-account",
+      "url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/delegations/7187-base-account.json",
+      "sha256": "sha256:496730728c84d6947d1c4de6c93d6aa3e9b702c7ae6e50e3a9f2810fd9013013",
+      "note": "Immutable v0.3.0 copy. Do not treat it as current once its revocation is published."
+    }
+  ],
+  "boundary": "This index is not signed. Verify each linked document. Publication of the revocation is what withdraws 7187-base-account; this file only points at the signed documents."
+}
