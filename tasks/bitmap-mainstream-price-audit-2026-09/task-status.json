@@ -1,0 +1,17 @@
+{
+  "schema_version": "organa-legacy-path-pointer-v0.1",
+  "pointer_type": "superseded-unusable-task-offer",
+  "coordinate": "7187.bitmap",
+  "task_id": "bitmap-mainstream-price-audit-2026-09",
+  "status": "superseded-and-revoked-do-not-work",
+  "note": "This September task offer is retained solely for historical byte and hash auditability. Its backing delegation 7187-base-account was permanently revoked on 2026-10-02 (via BIP-322 signature). This offer does not authorise anyone to speak for 7187.bitmap, is not escrowed on-chain, and must not be accepted or claimed. Refer to current_board_task in tasks/open-tasks.json.",
+  "original_offer_file": "offer.json",
+  "original_offer_sha256": "sha256:8e597cdc006a4b73542c1eb64e6aed5e6568607f1ed2bb2fff1dacd764fef764",
+  "revocation_notice_url": "https://danyanpihuihui.github.io/organa-cell-7187/delegations/7187-base-account.revocation.json",
+  "current_open_tasks_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/open-tasks.json",
+  "machine_instructions": [
+    "Do not submit claims or artifacts against bitmap-mainstream-price-audit-2026-09.",
+    "Resolve active work via tasks/open-tasks.json current_board_task.",
+    "Verify the cashier delegation at delegations/7187-base-account-cashier.json."
+  ]
+}

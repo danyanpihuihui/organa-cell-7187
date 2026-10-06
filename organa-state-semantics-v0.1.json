@@ -22,8 +22,14 @@
   "precedence": [
     "Use /.well-known/organa.json for the current canonical manifest and activation state.",
     "Use controller-claim.json plus independent BIP-322 verification for controller authentication.",
-    "Treat status fields inside a signed manifest, signature request, proof index, or build-time report as immutable statements made when that candidate snapshot was constructed."
+    "Treat status fields inside a signed manifest, signature request, proof index, or build-time report as immutable statements made when that candidate snapshot was constructed.",
+    "Conflict resolution: Bitcoin L1 inscription/satoshi control strictly overrides GitHub Pages, web hosts, DNS, or marketplace display (bitcoin_inscription_or_satoshi_control > github_pages_or_marketplace_display)."
   ],
+  "authority_precedence": {
+    "root_authority": "bitcoin-satoshi-inscribed-control",
+    "rule": "bitcoin_inscription_or_satoshi_control > github_pages_or_marketplace_display",
+    "description": "When canonical state, resolver pointers, or hosting records conflict, cryptographic control of the Bitcoin inscription/sat takes strict precedence over GitHub Pages, domain registrations, or marketplace listings."
+  },
   "immutable_candidate_snapshot": {
     "description": "A versioned manifest is constructed and hashed before the controller can sign it. After signing, its bytes and all signature-bound inputs remain immutable even if they contain pre-activation status values.",
     "must_not_be_mutated_after_signature": true,

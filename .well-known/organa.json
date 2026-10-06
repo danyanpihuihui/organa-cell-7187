@@ -28,6 +28,7 @@
     "lifecycle_status": "declared object lifecycle",
     "activation_status": "canonical publication activation",
     "controller_signature_status": "controller authentication state",
+    "precedence_rule": "bitcoin_inscription_or_satoshi_control > github_pages_or_marketplace_display",
     "immutable_candidate_manifest": true,
     "signature_expiry_meaning": "signature-authorization-window"
   },
