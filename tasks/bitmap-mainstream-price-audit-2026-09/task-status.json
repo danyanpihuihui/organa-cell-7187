@@ -4,7 +4,7 @@
   "coordinate": "7187.bitmap",
   "task_id": "bitmap-mainstream-price-audit-2026-09",
   "status": "superseded-and-revoked-do-not-work",
-  "note": "This September task offer is retained solely for historical byte and hash auditability. Its backing delegation 7187-base-account was permanently revoked on 2026-10-02 (via BIP-322 signature). This offer does not authorise anyone to speak for 7187.bitmap, is not escrowed on-chain, and must not be accepted or claimed. Refer to current_board_task in tasks/open-tasks.json.",
+  "note": "This September task offer is retained solely for historical byte and hash auditability. Its backing delegation 7187-base-account was permanently revoked on 2026-10-02 (via BIP-322 signature). This offer does not authorise anyone to speak for 7187.bitmap, is not escrowed on-chain, and must not be accepted or claimed. Resolve active board work via closed_board_tasks (or current_board_task, when one exists) in tasks/open-tasks.json.",
   "original_offer_file": "offer.json",
   "original_offer_sha256": "sha256:8e597cdc006a4b73542c1eb64e6aed5e6568607f1ed2bb2fff1dacd764fef764",
   "revocation_notice_url": "https://danyanpihuihui.github.io/organa-cell-7187/delegations/7187-base-account.revocation.json",

@@ -1,0 +1,19 @@
+{
+  "schema_version": "organa-board-task-registry-v0.1",
+  "coordinate": "7187.bitmap",
+  "board": "0x6b879e224310404e879213f82b62b3c95b88a89b",
+  "chain_id": 8453,
+  "generated_at_utc": "2026-11-03T00:00:00+00:00",
+  "note": "Publisher-owned pointer list: which board task ids this Cell publishes, and where their notices and specs live. This file cannot claim a task is open. scripts/publish_open_tasks.py resolves every entry against Base (stage, deadlines, commit/reveal counts) and writes the result into open-tasks.json. An entry whose chain read fails is published as chain-unreadable-do-not-trust-this-page, never as open.",
+  "tasks": [
+    {
+      "task_id": "0x38ee9c3651c5a1e6647e72c08383760d7256d5e4ec5e324688fd3e7406cdabfa",
+      "slug": "organa-delegation-check-2026-10-02",
+      "create_tx": "0x4cb44236f5e7c5bcb8cc16373dc951de925c8f94e524b6b58c60661d6c6dcff3",
+      "notice_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/organa-delegation-check-2026-10-02/board-task.json",
+      "spec_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/organa-delegation-check-2026-10-02/spec.json",
+      "settle_tx": "0x89f73570c66cfae6e7afca197f75bfc77ae6295b996f17cde726747d8cd9e701",
+      "settle_note": "Keeper-called settleConsensusOnChain after the reveal window closed with zero commits and zero reveals: the budget was refunded to the requester and the task moved to Refunded. Permissionless - any address could have called it."
+    }
+  ]
+}

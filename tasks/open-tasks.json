@@ -1,13 +1,74 @@
 {
   "schema_version": "organa-open-tasks-v0.1",
   "coordinate": "7187.bitmap",
-  "generated_at_utc": "2026-09-19T06:35:08+00:00",
+  "generated_at_utc": "2026-11-03T12:33:03+00:00",
   "verification_endpoint": "https://organa-proof-verifier.onrender.com/v1/verify/task",
   "delegation_endpoint": "https://organa-proof-verifier.onrender.com/v1/verify/delegation",
+  "board_status_note": "Board task status below is read from Base at generation time and re-checkable by anyone (see tasks/README.md). A task is called open-for-commit only when the chain says its commit window is still open right now.",
+  "current_board_task": null,
+  "closed_board_tasks": [
+    {
+      "task_id": "0x38ee9c3651c5a1e6647e72c08383760d7256d5e4ec5e324688fd3e7406cdabfa",
+      "slug": "organa-delegation-check-2026-10-02",
+      "notice_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/organa-delegation-check-2026-10-02/board-task.json",
+      "spec_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/organa-delegation-check-2026-10-02/spec.json",
+      "create_tx": "0x4cb44236f5e7c5bcb8cc16373dc951de925c8f94e524b6b58c60661d6c6dcff3",
+      "recorded_settle_tx": "0x89f73570c66cfae6e7afca197f75bfc77ae6295b996f17cde726747d8cd9e701",
+      "chain": {
+        "exists": true,
+        "stage": "Refunded",
+        "chain_id": 8453,
+        "requester": "0xb12d25a800659d909d52dd07efcd9239175aec9c",
+        "spec_hash": "0x73ee620df701955c76d962afa62f736bcfcb120e463918aa67691490edacd46a",
+        "total_budget_wei": "40000000000000",
+        "worker_bond_wei": "10000000000000",
+        "max_tolerance_bps": 500,
+        "commit_deadline_unix": 1791023321,
+        "reveal_deadline_unix": 1791109721,
+        "commit_count": 0,
+        "reveal_count": 0,
+        "seconds_past_commit_deadline": 2685860,
+        "seconds_past_reveal_deadline": 2599460,
+        "claimable_now": false,
+        "claimable_reason": "already finalized (Refunded)",
+        "read_at_unix": 1793709181
+      },
+      "status": "closed-refunded",
+      "status_basis": "already finalized (Refunded)",
+      "settlement_events": [
+        {
+          "topic0": "0x3d5b51cd68e27f3653892406072807d5f8b144eeb63803e890b3f71940aa9287",
+          "address": "0x6b879e224310404e879213f82b62b3c95b88a89b",
+          "event": "TaskRefunded",
+          "task_id": "0x38ee9c3651c5a1e6647e72c08383760d7256d5e4ec5e324688fd3e7406cdabfa",
+          "requester": "0xb12d25a800659d909d52dd07efcd9239175aec9c",
+          "amount_wei": "40000000000000",
+          "reason_code": 1,
+          "reason": "insufficient-reveals",
+          "commit_count": 0,
+          "reveal_count": 0
+        }
+      ]
+    }
+  ],
+  "superseded_signed_offers": [
+    {
+      "task_id": "bitmap-mainstream-price-audit-2026-09",
+      "status": "do-not-use",
+      "reason": "The delegation this offer names (7187-base-account) was revoked on 2026-10-02T09:34:26.735996+00:00. The signed bytes are unchanged and retained for audit; it no longer authorises anyone to speak for this Cell.",
+      "offer_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/bitmap-mainstream-price-audit-2026-09/offer.json",
+      "offer_sha256": "sha256:8e597cdc006a4b73542c1eb64e6aed5e6568607f1ed2bb2fff1dacd764fef764",
+      "revocation_url": "https://danyanpihuihui.github.io/organa-cell-7187/delegations/7187-base-account.revocation.json"
+    }
+  ],
   "tasks": [
     {
       "task_id": "bitmap-mainstream-price-audit-2026-09",
-      "state": "open",
+      "state": "superseded-unusable-do-not-claim",
+      "escrow": {
+        "on_chain": false,
+        "note": "Publishing a signed offer moves no money. There is no board task for this offer, so it cannot be committed to on chain."
+      },
       "offer_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/bitmap-mainstream-price-audit-2026-09/offer.json",
       "offer_sha256": "sha256:8e597cdc006a4b73542c1eb64e6aed5e6568607f1ed2bb2fff1dacd764fef764",
       "title": "Independently reproduce the 7187.bitmap 30-day Bitmap mainstream price series",
@@ -23,31 +84,23 @@
       "expires_at_utc": "2026-10-19T02:56:57.626633+00:00",
       "payout_address": "0xB12d25a800659D909D52Dd07EFcD9239175aec9c",
       "requester_account": "0xB12d25a800659D909D52Dd07EFcD9239175aec9c",
+      "superseded_by": "https://danyanpihuihui.github.io/organa-cell-7187/delegations/7187-base-account.revocation.json",
+      "superseded_reason": "The delegation this offer names (7187-base-account) was revoked on 2026-10-02T09:34:26.735996+00:00. The signed bytes are unchanged and retained for audit; it no longer authorises anyone to speak for this Cell.",
       "cell_authority": {
         "mode": "cell-account-delegation",
-        "status": "delegation-published-pending-reader-verification",
+        "status": "delegation-revoked",
         "note": "The requester account is named in a delegation signed by the Cell controller. Verify the delegation yourself at delegation_url; this index does not carry or check it.",
         "delegation_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/delegations/7187-base-account.json",
-        "delegation_sha256": "sha256:496730728c84d6947d1c4de6c93d6aa3e9b702c7ae6e50e3a9f2810fd9013013"
+        "delegation_sha256": "sha256:496730728c84d6947d1c4de6c93d6aa3e9b702c7ae6e50e3a9f2810fd9013013",
+        "revocation_url": "https://danyanpihuihui.github.io/organa-cell-7187/delegations/7187-base-account.revocation.json"
       }
     }
   ],
-  "delegation_url": "https://danyanpihuihui.github.io/organa-cell-7187/versions/0.3.0/delegations/7187-base-account.json",
-  "delegation_sha256": "sha256:496730728c84d6947d1c4de6c93d6aa3e9b702c7ae6e50e3a9f2810fd9013013",
-  "current_board_task": {
-    "task_id": "0x38ee9c3651c5a1e6647e72c08383760d7256d5e4ec5e324688fd3e7406cdabfa",
-    "notice_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/organa-delegation-check-2026-10-02/board-task.json",
-    "spec_url": "https://danyanpihuihui.github.io/organa-cell-7187/tasks/organa-delegation-check-2026-10-02/spec.json",
-    "create_tx": "0x4cb44236f5e7c5bcb8cc16373dc951de925c8f94e524b6b58c60661d6c6dcff3",
-    "status": "open-for-commit",
-    "reward_escrowed": true,
-    "budget_wei": "40000000000000"
-  },
-  "superseded_signed_offers": [
-    {
-      "task_id": "bitmap-mainstream-price-audit-2026-09",
-      "status": "do-not-use",
-      "reason": "Its delegation 7187-base-account was revoked on 2026-10-02. The signed offer file is unchanged, but it no longer authorises anyone to speak for 7187.bitmap."
-    }
-  ]
+  "board_task_registry": {
+    "registry": "/Users/danyanpihuihui/Desktop/projects/bitmap/bitmap-memory-portal/output/organa-cell-7187-github-pages/tasks/board-task-registry.json",
+    "status": "read",
+    "notes": [
+      "0x38ee9c3651: stage=Refunded commits=0 reveals=0 claimable=False"
+    ]
+  }
 }

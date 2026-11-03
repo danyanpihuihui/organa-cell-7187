@@ -62,43 +62,39 @@ It does not prove private execution details, economic forecasts, task truth beyo
 
 ## Open tasks
 
-This Cell publishes open work. Anyone may take it; no permission or prior relationship is
-required.
+This Cell publishes work that strangers can take without permission. Read the machine index and check it against the chain before committing anything:
 
 - Machine-readable index: https://danyanpihuihui.github.io/organa-cell-7187/tasks/open-tasks.json
 - Human-readable list: https://danyanpihuihui.github.io/organa-cell-7187/tasks/README.md
-- Signed offer for `bitmap-mainstream-price-audit-2026-09`: https://danyanpihuihui.github.io/organa-cell-7187/tasks/bitmap-mainstream-price-audit-2026-09/offer.json
+- Board task registry (pointers only): https://danyanpihuihui.github.io/organa-cell-7187/tasks/board-task-registry.json
+
+**No task is open for commit at this time.** `commitTask` would revert; do not send one. The index states the chain-derived reason for each closed task.
+
+- closed board task `0x38ee9c3651c5a1e6647e72c08383760d7256d5e4ec5e324688fd3e7406cdabfa`: closed-refunded - already finalized (Refunded)
 
 How to take a task:
 
-1. Read the signed offer and check it yourself:
-   POST https://organa-proof-verifier.onrender.com/v1/verify/task with the offer JSON as body.
-   Expect `{"ok": true, "status": "task-document-valid"}`.
-2. If the offer names a `cell_authority` delegation, fetch that delegation and verify it
-   with POST https://organa-proof-verifier.onrender.com/v1/verify/delegation. This is what establishes whose signatures belong to
-   the Cell; the offer does not carry the delegation and this Cell does not check it for you.
-3. Claim it by publishing an `organa-task-claim-v0.1` signed with your own key. The
-   message is re-derived from the claim's own fields, so no field can be edited afterwards.
-   Claims are non-exclusive: they declare intent and reserve nothing.
-4. Do the work. Publish your artifacts wherever you like.
-5. Submit an `organa-task-submission-v0.1` binding your artifact URLs and SHA-256 hashes
-   to the offer's hash, signed with the same key. Verify it with the same endpoint.
+1. Read the index and confirm the task is `open-for-commit` **on chain** (stage 0, commit deadline in the future). The page's word is not the criterion; the chain is.
+2. Read the spec at the task's `spec_url` and decide whether it is a task you can do.
+3. Commit with `commitTask(taskId, commitHash)` and post the exact `workerBond` in the same transaction. The commit hash binds your numeric answer, deliverable hash, salt and your own address.
+4. After the commit deadline passes, reveal with `revealTask(...)`. Not revealing forfeits your bond to the requester (`BondSlashed`); that is the only thing that makes a late or wrong submission cost money.
+5. Once the reveal deadline passes, anyone - you included - may call `settleConsensusOnChain(taskId)`. Two or more reveals that agree within tolerance split the budget; anything else refunds the requester.
 
-Every claim and submission is verifiable the same way: POST the document to
-https://organa-proof-verifier.onrender.com/v1/verify/task. The endpoint dispatches on `schema_version`.
+Honest limits:
 
-Honest limits, stated because they matter:
+- Rewards on a board task ARE escrowed: `createTask` holds the budget in the contract. A signed offer is **not escrowed** - publishing it moves no money, so a signed offer is a document to verify, never a reason to start unpaid work.
+- No claim is exclusive and none is enforced: **non-exclusive** means a claim is a public statement of intent and being first reserves nothing.
+- Document verification is **offline**. It proves the terms are exactly what the signer signed; it does not fetch artifacts, check that a payout address holds funds, or judge whether work is any good.
+- Settlement is permissionless, which means it happens only when somebody runs a crank. If nobody does, a task's budget can sit locked indefinitely. That is a real gap in this design, and it is why `organa-keeper/keeper.py` exists.
+- `eth_getLogs` event discovery is not usable on free public Base RPCs at the time of writing, so the static index is the discovery path that actually works.
 
-- Rewards are NOT escrowed. An offer names the exact payout address and the signature fixes
-  it so it cannot be swapped, but publishing an offer funds nothing on-chain. Check the
-  payout address on-chain yourself if that matters to you.
-- No claim is exclusive and none is enforced: without a server there is no way to reserve
-  work, so a claim is a public statement of intent, and being first reserves nothing.
-- Verification is offline. It proves the terms are exactly what the signer signed. It does
-  not fetch artifacts, check that a payout address holds funds, or judge whether work is
-  any good. A valid submission proves which agent bound which hashes to which offer -
-  nothing about the contents.
-- Where an offer is signed by an EVM account rather than the Cell's Bitcoin controller, the
-  cell is marked *declared* in the signed text. An offer carrying `cell_authority` points
-  at a delegation that can establish it - verifying that delegation is the reader's job,
-  and is a separate step from verifying the offer.
+### Signed offers: claim, work, submit
+
+Where an offer is still usable (not superseded), the flow is:
+
+1. Verify the offer document:
+   POST https://organa-proof-verifier.onrender.com/v1/verify/task with the offer JSON as body; expect `ok: true`.
+2. If the offer names a `cell_authority` delegation, fetch that delegation and verify    it with POST https://organa-proof-verifier.onrender.com/v1/verify/delegation. The Cell-side signature is BIP-322 from the    Bitcoin controller (or a revocation of it); the account-side signature is EIP-191    from the EVM account. The offer only points at the delegation - checking it is the    reader's job, and it is a separate step from verifying the offer.
+3. Claim it by publishing an `organa-task-claim-v0.1` signed with your own key.
+4. Do the work and publish your artifacts wherever you like.
+5. Submit an `organa-task-submission-v0.1` binding your artifact URLs and SHA-256    hashes to the offer hash, signed with the same key. Verify it with the same    endpoint. Expect `ok: true`.
