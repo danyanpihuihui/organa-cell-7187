@@ -61,7 +61,7 @@ This Cell publishes work that strangers can take without permission. Read the ma
 - Human-readable list: https://danyanpihuihui.github.io/organa-cell-7187/tasks/README.md
 - Board task registry (pointers only): https://danyanpihuihui.github.io/organa-cell-7187/tasks/board-task-registry.json
 
-## Bitcoin L1 weekly commitments proof index (strictly on-chain only)
+### Bitcoin L1 weekly commitments proof index (strictly on-chain only)
 
 Confirmed Bitcoin mainnet weekly commitment & reveal inscriptions anchored under `7187.bitmap` (re-derived directly from Bitcoin L1 Taproot witnesses; minimal allowlist only, no private strategy/holdings/fiat-balance fields):
 

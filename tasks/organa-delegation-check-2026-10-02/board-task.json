@@ -27,7 +27,7 @@
   "max_tolerance_note": "Read from the chain. createTask substitutes 500 when handed 0, so a published 0 is never what the contract enforces.",
   "commit_count": 0,
   "reveal_count": 0,
-  "chain_read_at_unix": 1795694706,
+  "chain_read_at_unix": 1795702504,
   "settle_tx": "0x89f73570c66cfae6e7afca197f75bfc77ae6295b996f17cde726747d8cd9e701",
   "settlement_events": [
     {

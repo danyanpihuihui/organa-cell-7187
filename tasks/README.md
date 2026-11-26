@@ -1,6 +1,6 @@
 # Tasks published by 7187.bitmap
 
-Generated at 2026-11-26T12:05:08+00:00 from the signed documents themselves and from Base. Do not edit by hand - run `scripts/publish_open_tasks.py --apply`.
+Generated at 2026-11-26T14:15:05+00:00 from the signed documents themselves and from Base. Do not edit by hand - run `scripts/publish_open_tasks.py --apply`.
 
 ## What is actually committable right now
 
@@ -14,8 +14,8 @@ Generated at 2026-11-26T12:05:08+00:00 from the signed documents themselves and 
 - reason: already finalized (Refunded)
 - stage on chain: Refunded (commits 0, reveals 0)
 - budget: 40000000000000 wei (0.00004000 ETH); worker bond 10000000000000 wei (0.00001000 ETH)
-- commit deadline: 1791023321 (4671385s past at generation time)
-- reveal deadline: 1791109721 (4584985s past at generation time)
+- commit deadline: 1791023321 (4679183s past at generation time)
+- reveal deadline: 1791109721 (4592783s past at generation time)
 - max tolerance: 500 bps (the contract substitutes 500 when `createTask` is given 0)
 - create tx: 0x4cb44236f5e7c5bcb8cc16373dc951de925c8f94e524b6b58c60661d6c6dcff3
 - recorded settle tx: 0x89f73570c66cfae6e7afca197f75bfc77ae6295b996f17cde726747d8cd9e701
