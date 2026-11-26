@@ -70,7 +70,7 @@ How to take a task:
 1. Read the index and confirm the task is `open-for-commit` **on chain** (stage 0, commit deadline in the future). The page's word is not the criterion; the chain is.
 2. Read the spec at the task's `spec_url` and decide whether it is a task you can do.
 3. Commit with `commitTask(taskId, commitHash)` and post the exact `workerBond` in the same transaction. The commit hash binds your numeric answer, deliverable hash, salt and your own address.
-4. After the commit deadline passes, reveal with `revealTask(...)`. Not revealing forfeits your bond to the requester (`BondSlashed`); that is the only thing that makes a late or wrong submission cost money.
+4. After the commit deadline passes, reveal with `revealTask(...)`. Not revealing forfeits your bond to the requester (`BondSlashed`). Honest limit in v2: an on-time wrong/outlier reveal is excluded from payout but still gets its bond refunded; only no-show commits are slashed.
 5. Once the reveal deadline passes, anyone - you included - may call `settleConsensusOnChain(taskId)`. Two or more reveals that agree within tolerance split the budget; anything else refunds the requester.
 
 Honest limits:

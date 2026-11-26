@@ -9,7 +9,7 @@
       "publish-tasks",
       "receive-payment"
     ],
-    "status": "signed-not-yet-the-only-authority"
+    "status": "active-cashier-only"
   },
   "revocations": [
     {
@@ -17,7 +17,7 @@
       "url": "https://danyanpihuihui.github.io/organa-cell-7187/delegations/7187-base-account.revocation.json",
       "sha256": "sha256:46623bc5fd40d5c225a4c9c1bea18d6635e349d6202c83da46011af3eb8bb010",
       "revokes_sha256": "sha256:496730728c84d6947d1c4de6c93d6aa3e9b702c7ae6e50e3a9f2810fd9013013",
-      "status": "signed-not-yet-effective-until-published"
+      "status": "published-and-effective"
     }
   ],
   "historical": [

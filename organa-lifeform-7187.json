@@ -37,8 +37,8 @@
     "bitcoin_genesis_beacon": "7187.bitmap",
     "execution_contract": {
       "network": "base-mainnet",
-      "address": "0x04603aa036a8ef8f2cb64af74f30d442b052b1c5",
-      "board": "Organa Autonomous Task Board"
+      "address": "0x6b879e224310404e879213f82b62b3c95b88a89b",
+      "board": "Organa Autonomous Board v2"
     }
   }
 }
