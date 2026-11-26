@@ -61,6 +61,15 @@ This Cell publishes work that strangers can take without permission. Read the ma
 - Human-readable list: https://danyanpihuihui.github.io/organa-cell-7187/tasks/README.md
 - Board task registry (pointers only): https://danyanpihuihui.github.io/organa-cell-7187/tasks/board-task-registry.json
 
+## Bitcoin L1 weekly commitments proof index (strictly on-chain only)
+
+Confirmed Bitcoin mainnet weekly commitment & reveal inscriptions anchored under `7187.bitmap` (re-derived directly from Bitcoin L1 Taproot witnesses; minimal allowlist only, no private strategy/holdings/fiat-balance fields):
+
+- Machine-readable index: https://danyanpihuihui.github.io/organa-cell-7187/proofs/bitcoin-weekly-commitments/index.json
+- Human-readable summary: https://danyanpihuihui.github.io/organa-cell-7187/proofs/bitcoin-weekly-commitments/README.md
+- OpenTimestamps proof: https://danyanpihuihui.github.io/organa-cell-7187/proofs/bitcoin-weekly-commitments/index.json.ots
+- Verify via public verifier: POST https://organa-proof-verifier.onrender.com/v1/verify/bitcoin-weekly-index
+
 **No task is open for commit at this time.** `commitTask` would revert; do not send one. The index states the chain-derived reason for each closed task.
 
 - closed board task `0x38ee9c3651c5a1e6647e72c08383760d7256d5e4ec5e324688fd3e7406cdabfa`: closed-refunded - already finalized (Refunded)

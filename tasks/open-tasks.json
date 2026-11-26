@@ -1,7 +1,7 @@
 {
   "schema_version": "organa-open-tasks-v0.1",
   "coordinate": "7187.bitmap",
-  "generated_at_utc": "2026-11-26T11:00:00+00:00",
+  "generated_at_utc": "2026-11-26T12:05:08+00:00",
   "verification_endpoint": "https://organa-proof-verifier.onrender.com/v1/verify/task",
   "delegation_endpoint": "https://organa-proof-verifier.onrender.com/v1/verify/delegation",
   "board_status_note": "Board task status below is read from Base at generation time and re-checkable by anyone (see tasks/README.md). A task is called open-for-commit only when the chain says its commit window is still open right now.",
@@ -27,11 +27,11 @@
         "reveal_deadline_unix": 1791109721,
         "commit_count": 0,
         "reveal_count": 0,
-        "seconds_past_commit_deadline": 4667477,
-        "seconds_past_reveal_deadline": 4581077,
+        "seconds_past_commit_deadline": 4671385,
+        "seconds_past_reveal_deadline": 4584985,
         "claimable_now": false,
         "claimable_reason": "already finalized (Refunded)",
-        "read_at_unix": 1795690798
+        "read_at_unix": 1795694706
       },
       "status": "closed-refunded",
       "status_basis": "already finalized (Refunded)",

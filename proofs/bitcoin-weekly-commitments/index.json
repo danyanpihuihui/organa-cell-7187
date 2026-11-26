@@ -1,0 +1,1771 @@
+{
+  "schema_version": "organa-bitcoin-weekly-commitments-index-v0.1",
+  "coordinate": "7187.bitmap",
+  "generated_at_utc": "2026-11-26T12:04:55+00:00",
+  "source_policy": "bitcoin-l1-confirmed-witness-only",
+  "disclosure_level": "L1_PUBLIC_CHAIN_PROOF_MINIMAL",
+  "excluded_fields_by_policy": [
+    "account_balance_amounts",
+    "cash_flow_amounts",
+    "sampled_trade_row_details",
+    "holdings",
+    "strategy_code",
+    "broker_evidence",
+    "local_unpublished_weeks"
+  ],
+  "root_anchors": {
+    "parent_bitmap": {
+      "coordinate": "7187.bitmap",
+      "inscription_id": "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0",
+      "txid": "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61",
+      "confirmed": true,
+      "block_height": 794524,
+      "block_hash": "000000000000000000050fb165d217c2984c9297fe34945c3203f53419cee291",
+      "block_time_utc": "2023-06-15T23:15:05+00:00"
+    },
+    "strategy_passport": {
+      "inscription_id": "399fded9cb7caa4e0d3058d86e22cd5958b2dfd966d3e42f3dc4f36586417122i0",
+      "txid": "399fded9cb7caa4e0d3058d86e22cd5958b2dfd966d3e42f3dc4f36586417122",
+      "confirmed": true,
+      "block_height": 956675,
+      "block_hash": "00000000000000000000a9fcf653d068bf8574b7235e766b7a19ed800a5fc233",
+      "block_time_utc": "2026-07-04T17:10:15+00:00"
+    }
+  },
+  "summary": {
+    "total_confirmed_weeks": 19,
+    "total_confirmed_reveals": 18,
+    "first_week": "2026-W28",
+    "last_week": "2026-W47",
+    "first_block_height": 957422,
+    "latest_block_height": 976860,
+    "total_committed_trades": 1409,
+    "latest_strategy_index": "90.9797",
+    "latest_weekly_return_pct": "-5.3840",
+    "skipped_weeks": [
+      "2026-W35"
+    ]
+  },
+  "chain_continuity_audit": {
+    "checked_links": 10,
+    "exact_prev_commit_links": 9,
+    "historical_pointer_notes": [
+      {
+        "week": "2026-W40",
+        "commitment_inscription_id": "750e37241fba6839959654540d873a3532490450dd661303d7c360546c8a1509i0",
+        "recorded_previous_id": "62f9b306e72a2442b528401b280547add829d65d7eb407335ef55bc51bab225fi0",
+        "expected_previous_week": "2026-W39",
+        "expected_previous_commitment_id": "97822fcfa2e81c70abd1402043db95a6b5347ec0a8f9d6b654a86bdb5205746bi0",
+        "note": "Immutable on-chain payload points to 62f9b306e72a2442b528401b280547add829d65d7eb407335ef55bc51bab225fi0 (2026-W38 reveal inscription) instead of 2026-W39 commitment 97822fcfa2e81c70abd1402043db95a6b5347ec0a8f9d6b654a86bdb5205746bi0; preserved verbatim from Bitcoin L1 witness."
+      }
+    ]
+  },
+  "weeks": [
+    {
+      "week": "2026-W28",
+      "regime": "v1-weekly-audit",
+      "week_start": "2026-07-06",
+      "week_end": "2026-07-10",
+      "trading_days": 5,
+      "weekly_trade_count": 68,
+      "commitment": {
+        "inscription_id": "970bef575e16a101616905ebb48be2101844c31acf98bcc68c9448bc52f6b095i0",
+        "txid": "970bef575e16a101616905ebb48be2101844c31acf98bcc68c9448bc52f6b095",
+        "confirmed": true,
+        "block_height": 957422,
+        "block_hash": "0000000000000000000158d74c1b2b9f4b95309f863b8ed5c4efb1923ffe861d",
+        "block_time_utc": "2026-07-10T12:31:46+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 2273,
+        "payload_sha256": "sha256:44f906287ac8e1d4247aa3363cbc1cb4c63f9338f0375a42c30f5cfa13d37b4a",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.1.0",
+        "weekly_trade_pool_root": "sha256:1453774863dd36917b44dcb7a37b765c3c74ee05964eb4bcb8a0f9296dc5b377",
+        "previous_weekly_commitment_inscription_id": null,
+        "pointer_status": "none-in-v1-schema"
+      },
+      "index_metrics": null,
+      "daily_hashes": [
+        {
+          "date": "2026-07-06",
+          "trade_count": 11,
+          "ordered_trade_merkle_root": "sha256:456923dc7510a4fb03dd387fcfacf8bd3d1a3ee0abcc3789f598c4a97090a4e1"
+        },
+        {
+          "date": "2026-07-07",
+          "trade_count": 12,
+          "ordered_trade_merkle_root": "sha256:dc1cd7a04e794181189b859c789a8d53a35bd2c72115866f42c54fa3097ea269"
+        },
+        {
+          "date": "2026-07-08",
+          "trade_count": 8,
+          "ordered_trade_merkle_root": "sha256:9812ff72035206f281bdbdbc26759e585638dd6f8fc54a503646d48cd0b84cc3"
+        },
+        {
+          "date": "2026-07-09",
+          "trade_count": 15,
+          "ordered_trade_merkle_root": "sha256:7d78a520f3d67152d1c2a978a909264d3f087393462688f0715f1990946e977f"
+        },
+        {
+          "date": "2026-07-10",
+          "trade_count": 22,
+          "ordered_trade_merkle_root": "sha256:fc2e742d6b52babe0ac6ea4157b5f8f53fd2b84f825fc26e62958582d0fad392"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "5acab23e616a664ab7b81e6f44e70f11d5fb5d5b9e999a0416c964d91dab5b0di0",
+        "txid": "5acab23e616a664ab7b81e6f44e70f11d5fb5d5b9e999a0416c964d91dab5b0d",
+        "confirmed": true,
+        "block_height": 957431,
+        "block_hash": "000000000000000000018cb6b6bb3bfe8504477703918245e012675f393d4aa1",
+        "block_time_utc": "2026-07-10T13:37:30+00:00",
+        "byte_length": 2269,
+        "payload_sha256": "sha256:9f590feae8775d1f1b483165bdc4bf591a621f7302efa5b37198a88ecb61474b",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 957428,
+        "seed_block_hash": "000000000000000000011b9d85f6c920b816d1a4e1ad82d5118a45aadfece24d",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W29",
+      "regime": "v1-weekly-audit",
+      "week_start": "2026-07-13",
+      "week_end": "2026-07-17",
+      "trading_days": 5,
+      "weekly_trade_count": 108,
+      "commitment": {
+        "inscription_id": "f4e11247b10c00a7041f64c81e27d81a28a8c85ffa090a3c3c4672dba037734ei0",
+        "txid": "f4e11247b10c00a7041f64c81e27d81a28a8c85ffa090a3c3c4672dba037734e",
+        "confirmed": true,
+        "block_height": 958480,
+        "block_hash": "000000000000000000008230a195788f495163992f196d12647ac828e770cba5",
+        "block_time_utc": "2026-07-18T02:58:58+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 2739,
+        "payload_sha256": "sha256:7505f91cdecfdae9db136a5fd0a903c1869f3c8807a3b5871c7c48a7e23e9327",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.1.0",
+        "weekly_trade_pool_root": "sha256:456376f3647e86303bb83cb2fb02c91743fb4246d63b36b067972d461b9b7585",
+        "previous_weekly_commitment_inscription_id": null,
+        "pointer_status": "none-in-v1-schema"
+      },
+      "index_metrics": null,
+      "daily_hashes": [
+        {
+          "date": "2026-07-13",
+          "trade_count": 27,
+          "ordered_trade_merkle_root": "sha256:b6fef402c290feb1d15e6f52ae8ecbdae22e56e74ba658b34303694fda820b0c"
+        },
+        {
+          "date": "2026-07-14",
+          "trade_count": 12,
+          "ordered_trade_merkle_root": "sha256:4f64ffacfbc8dfef88450154cb042b051986aa1af0fc90ec9d2454a08353380b"
+        },
+        {
+          "date": "2026-07-15",
+          "trade_count": 22,
+          "ordered_trade_merkle_root": "sha256:7a60232fb0678cd7ec7f5b9599ccc80464835e27c070940f39d719f0336d947b"
+        },
+        {
+          "date": "2026-07-16",
+          "trade_count": 21,
+          "ordered_trade_merkle_root": "sha256:f095a60a6f9d573dd5752bd81f1e273a0053ad196361f6db109f34312549b327"
+        },
+        {
+          "date": "2026-07-17",
+          "trade_count": 26,
+          "ordered_trade_merkle_root": "sha256:5a3f4e242d4f9984afd4a1f96f0c9e9333287869a465c89f71fc9474bd18919e"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "8e6472f3d1f98a85da28dc126c1266855641f8a2c639274190ed70359b5e4285i0",
+        "txid": "8e6472f3d1f98a85da28dc126c1266855641f8a2c639274190ed70359b5e4285",
+        "confirmed": true,
+        "block_height": 958489,
+        "block_hash": "00000000000000000001a486ea03e21b88c556efa8382426642560341f0fff89",
+        "block_time_utc": "2026-07-18T04:13:26+00:00",
+        "byte_length": 2271,
+        "payload_sha256": "sha256:d7f66d6ae3279f817746af325b95e1dc235474320dc7313efe8c4a91898b7856",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 958486,
+        "seed_block_hash": "000000000000000000012885d7e5e8ca567f0081a7d61e169b3157eb5cbe0514",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W30",
+      "regime": "v1-weekly-audit",
+      "week_start": "2026-07-20",
+      "week_end": "2026-07-24",
+      "trading_days": 5,
+      "weekly_trade_count": 88,
+      "commitment": {
+        "inscription_id": "9c913cd8058a6fb136f7cd93ef3478f8425c84756af37d3cd4bd03591c10d618i0",
+        "txid": "9c913cd8058a6fb136f7cd93ef3478f8425c84756af37d3cd4bd03591c10d618",
+        "confirmed": true,
+        "block_height": 959489,
+        "block_hash": "0000000000000000000040151d17fd3a46dedddc4fa5148134937d136d528c38",
+        "block_time_utc": "2026-07-25T01:16:52+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 2725,
+        "payload_sha256": "sha256:76fa7547eaa9309d4675f321dc21a88cb274e182159ca2f8b17d06aa14172c1a",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.1.0",
+        "weekly_trade_pool_root": "sha256:782c287a84ec4545936f7a2e2a25d4c554a8fe7ff67fdeaa25c43858ad87d15c",
+        "previous_weekly_commitment_inscription_id": null,
+        "pointer_status": "none-in-v1-schema"
+      },
+      "index_metrics": null,
+      "daily_hashes": [
+        {
+          "date": "2026-07-20",
+          "trade_count": 21,
+          "ordered_trade_merkle_root": "sha256:d94a01e6eed1523b49e71504f470cb9d0dc9c3583650689a0773d9e2dd1dde17"
+        },
+        {
+          "date": "2026-07-21",
+          "trade_count": 15,
+          "ordered_trade_merkle_root": "sha256:6e00f9f9a0e66c39d56a55b6aadbe9317d3cf174142ec740de9b41ef335b4625"
+        },
+        {
+          "date": "2026-07-22",
+          "trade_count": 20,
+          "ordered_trade_merkle_root": "sha256:a966f63b903571ec00cf166c13e744a44c092844e900dcf80d85fbb216cdc46a"
+        },
+        {
+          "date": "2026-07-23",
+          "trade_count": 15,
+          "ordered_trade_merkle_root": "sha256:2eb53531f2d0baa0d84ad180aa476313d634b66530ad3b53a10cdd405627432b"
+        },
+        {
+          "date": "2026-07-24",
+          "trade_count": 17,
+          "ordered_trade_merkle_root": "sha256:22f2e370b55e2de024bad45bf68b2d2af90d2b980ba50f9f3a8d3ed693263dcc"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "8ace1c8761efcf3addc7173f103d7c6b47a38859d75a8d286f34a5e73f2df1b9i0",
+        "txid": "8ace1c8761efcf3addc7173f103d7c6b47a38859d75a8d286f34a5e73f2df1b9",
+        "confirmed": true,
+        "block_height": 959502,
+        "block_hash": "00000000000000000000677e6c879b510070c673b91dd3492f6a8141c197058f",
+        "block_time_utc": "2026-07-25T04:23:00+00:00",
+        "byte_length": 2268,
+        "payload_sha256": "sha256:e1205601ac491ec77da29b298f8c0826d00e23f5f0ef0bd17207519fb0834b03",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 959495,
+        "seed_block_hash": "0000000000000000000046584c6431a208b026c098c948410046f90368c410fe",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W31",
+      "regime": "v1-weekly-audit",
+      "week_start": "2026-07-27",
+      "week_end": "2026-07-31",
+      "trading_days": 5,
+      "weekly_trade_count": 73,
+      "commitment": {
+        "inscription_id": "fc88e6d1a344cd8069cfe451a6379937d2cad79aa0c95e0910fbeb89f185698di0",
+        "txid": "fc88e6d1a344cd8069cfe451a6379937d2cad79aa0c95e0910fbeb89f185698d",
+        "confirmed": true,
+        "block_height": 960910,
+        "block_hash": "00000000000000000000c977416402b8bbd071d9ca21a3c64ec5f4c648e41926",
+        "block_time_utc": "2026-08-03T20:37:37+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 4234,
+        "payload_sha256": "sha256:153e4f661e90025d4e837c1d657733fa5aa587645d0b41db74890756630d8ee1",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.1.0",
+        "weekly_trade_pool_root": "sha256:900f4af01403e3d31f0561d7ee1ef478a78017008f577065081adc5f8b54e2fe",
+        "previous_weekly_commitment_inscription_id": null,
+        "pointer_status": "none-in-v1-schema"
+      },
+      "index_metrics": null,
+      "daily_hashes": [
+        {
+          "date": "2026-07-27",
+          "trade_count": 14,
+          "ordered_trade_merkle_root": "sha256:86c4ed4f7d86f3ef75a4628c840cd28fbc53cc612f5d244afe892b590ed8c223",
+          "weekly_public_rows_root": "sha256:86c4ed4f7d86f3ef75a4628c840cd28fbc53cc612f5d244afe892b590ed8c223"
+        },
+        {
+          "date": "2026-07-28",
+          "trade_count": 15,
+          "ordered_trade_merkle_root": "sha256:ed30829252cab369603ac378124151b890ac8b838f386f5948270db228ada23b",
+          "weekly_public_rows_root": "sha256:ed30829252cab369603ac378124151b890ac8b838f386f5948270db228ada23b"
+        },
+        {
+          "date": "2026-07-29",
+          "trade_count": 14,
+          "ordered_trade_merkle_root": "sha256:5732dbda30f6c4032478a295793b7e79bffe0ba3dbf99f18b7f0077801b52aed",
+          "weekly_public_rows_root": "sha256:5d1e5dfb90f440d624070946c101182bee94fa2b153837e6524e4c8ac624891e"
+        },
+        {
+          "date": "2026-07-30",
+          "trade_count": 17,
+          "ordered_trade_merkle_root": "sha256:50641c74963a62f659e230e82088ce1ccc7f826d09c4c5554e34ab15d2cfc306",
+          "weekly_public_rows_root": "sha256:ca491b913c3c90a8013103e1fcff4d868102d1a56897255ecf78730e422fb01f"
+        },
+        {
+          "date": "2026-07-31",
+          "trade_count": 13,
+          "ordered_trade_merkle_root": "sha256:2053bfc8c6e901cdf9aeaa6fdbd78f6b0debbf3f642699849dc1d1fc59c35235",
+          "weekly_public_rows_root": "sha256:6179950cea15d5153c0b702e3d0b52feff82fa5b41fa05e0151111924304e9a7"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "4f52e2496a85575084bc68bddf4ef440fb511d22e00f5ca2da0bba657854c551i0",
+        "txid": "4f52e2496a85575084bc68bddf4ef440fb511d22e00f5ca2da0bba657854c551",
+        "confirmed": true,
+        "block_height": 960943,
+        "block_hash": "0000000000000000000022d0572fd594c91dff3872bce4b5fcb3119a64f4797d",
+        "block_time_utc": "2026-08-04T00:56:46+00:00",
+        "byte_length": 2198,
+        "payload_sha256": "sha256:c7c2c5afddb929e842833872a0defa639103c989252958046dfe4397bed1263f",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 960916,
+        "seed_block_hash": "000000000000000000019d54b9e49782f7e5d1157af327265794d8664bf62959",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W32",
+      "regime": "v1-weekly-audit",
+      "week_start": "2026-08-03",
+      "week_end": "2026-08-07",
+      "trading_days": 5,
+      "weekly_trade_count": 77,
+      "commitment": {
+        "inscription_id": "b8356051913834ed4bf347d56de9a076cee2af1ff91e2d703a805716a09726e1i0",
+        "txid": "b8356051913834ed4bf347d56de9a076cee2af1ff91e2d703a805716a09726e1",
+        "confirmed": true,
+        "block_height": 961521,
+        "block_hash": "00000000000000000001d07a3b3ac393a66478ffae13b5f78723456e8fa7f29e",
+        "block_time_utc": "2026-08-08T03:04:28+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 4309,
+        "payload_sha256": "sha256:c7f6f1627c3a47ab840a0599e7b9e00fb2c260a076632c65d89f4335bf421842",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.1.0",
+        "weekly_trade_pool_root": "sha256:d89e059e1669d0b9dae23844e2227dac1809c110a0f35734e64613aa0bdd621f",
+        "previous_weekly_commitment_inscription_id": null,
+        "pointer_status": "none-in-v1-schema"
+      },
+      "index_metrics": null,
+      "daily_hashes": [
+        {
+          "date": "2026-08-03",
+          "trade_count": 12,
+          "ordered_trade_merkle_root": "sha256:abd25978d67c3004ceb228eed559e7e7cbeb7838ac3dd8ba62c6402474b8b1e7",
+          "weekly_public_rows_root": "sha256:5d4acda78c77799e85a942663926411f8f737ce8d276b6b158e72795fef7297d"
+        },
+        {
+          "date": "2026-08-04",
+          "trade_count": 14,
+          "ordered_trade_merkle_root": "sha256:031bd9ce9abcce7f2eb31b336f515a50c9e74bb7fdd44c7ff06aa71c113908d7",
+          "weekly_public_rows_root": "sha256:8ad46900cf622dfed4066d2f2cf57ba199cd46d68329e2ee591ea2481ac1eccb"
+        },
+        {
+          "date": "2026-08-05",
+          "trade_count": 21,
+          "ordered_trade_merkle_root": "sha256:1568ed6f66d85eef543a7c401a3c42556d3884b724366fe86671d91608761e47",
+          "weekly_public_rows_root": "sha256:b078f3d3181c86ca49d0130ae013958f8a4ea48efcd4fe2e65ba0ae0ad7d4b37"
+        },
+        {
+          "date": "2026-08-06",
+          "trade_count": 17,
+          "ordered_trade_merkle_root": "sha256:2423be9f64c4cbd1d10146be2322e5e8c24deceb62056cb85bed332842d4a648",
+          "weekly_public_rows_root": "sha256:d8cdade21444ef4a3f730d69f70e7947a156c754c15f3573023bb6e2cc4529b4"
+        },
+        {
+          "date": "2026-08-07",
+          "trade_count": 13,
+          "ordered_trade_merkle_root": "sha256:298561416c16d0af24434297fe708cfb1c7f1389a4030ad3ce6b7eee2c2013b0",
+          "weekly_public_rows_root": "sha256:579d88deb34a106c169256b76269774e02127761cb573a90b5df21cbd35a8808"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "58b948d25e199f974017cdc128dc4aa0c143d5586fd5dae5a8ed95598a713b58i0",
+        "txid": "58b948d25e199f974017cdc128dc4aa0c143d5586fd5dae5a8ed95598a713b58",
+        "confirmed": true,
+        "block_height": 961535,
+        "block_hash": "00000000000000000000c69a8769de6e5fd941f0d597b12d51ee22ad167c80cd",
+        "block_time_utc": "2026-08-08T04:55:05+00:00",
+        "byte_length": 2268,
+        "payload_sha256": "sha256:01e0d5a986d19374dca348e3380134eaff358825a8b368751c28b689a3bf80ed",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 961527,
+        "seed_block_hash": "00000000000000000001a8ca78042e99753928a95cf971b701eadb1554afe4f5",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W33",
+      "regime": "v1-weekly-audit",
+      "week_start": "2026-08-10",
+      "week_end": "2026-08-14",
+      "trading_days": 5,
+      "weekly_trade_count": 74,
+      "commitment": {
+        "inscription_id": "0a8390af0265d9ff675d1c3128806d0fe39989715cc88ed6d08eaf1252d2f12di0",
+        "txid": "0a8390af0265d9ff675d1c3128806d0fe39989715cc88ed6d08eaf1252d2f12d",
+        "confirmed": true,
+        "block_height": 962509,
+        "block_hash": "000000000000000000022c795b2cde1fb4567b19838fac192ce83a39b748a315",
+        "block_time_utc": "2026-08-15T02:26:51+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 4219,
+        "payload_sha256": "sha256:8548b9cb0dfe7d22573c7ac94ddd3c8c62dce77bb73ffe0c441dbafd1fefbf39",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.1.0",
+        "weekly_trade_pool_root": "sha256:1a43d9b8a4c8a7d559b715d2af73930a13c4cc4377ae5c02fd1ae88cc2297450",
+        "previous_weekly_commitment_inscription_id": null,
+        "pointer_status": "none-in-v1-schema"
+      },
+      "index_metrics": null,
+      "daily_hashes": [
+        {
+          "date": "2026-08-10",
+          "trade_count": 13,
+          "ordered_trade_merkle_root": "sha256:6d2e217b69d9310e2b6f2c833e0adc0c5662b9fad1d330ad6da7d926fe7ca85a",
+          "weekly_public_rows_root": "sha256:9b84ea6594603e6a94b942127055830d54c649d7414d0d40e73c6709c79fb34a"
+        },
+        {
+          "date": "2026-08-11",
+          "trade_count": 11,
+          "ordered_trade_merkle_root": "sha256:24c337ab6843762a8e54ca31e59c1df1e7969f1b40aca0cb53356c730c2e739f",
+          "weekly_public_rows_root": "sha256:28afcfeebee34a176cca955d05de3104e129dbbc534b7d6f2e17ced10db0cf74"
+        },
+        {
+          "date": "2026-08-12",
+          "trade_count": 20,
+          "ordered_trade_merkle_root": "sha256:3bcc308b2f05c7017d751d55d5e0d55c690ea054ad89107f8803ce8f2d033e1d",
+          "weekly_public_rows_root": "sha256:ce76be264df2c40fa26ae91a326e4ec410f14dfc5e2a899b4088fa9dd3d84092"
+        },
+        {
+          "date": "2026-08-13",
+          "trade_count": 19,
+          "ordered_trade_merkle_root": "sha256:47986d5b9cc36bc9c4e4330556ca09c45b43e60e256032d240f414df67725aa8",
+          "weekly_public_rows_root": "sha256:afb80fbb7393cc0f55c43666ccb07d4634bb0e6b91e6d82e13ba199b7ad7bd06"
+        },
+        {
+          "date": "2026-08-14",
+          "trade_count": 11,
+          "ordered_trade_merkle_root": "sha256:768610049583471e58b86c31f9d95785f836a54c9904713a874b9f686c14202e",
+          "weekly_public_rows_root": "sha256:16b8abdd2bcfdb66802edb81ee138ada6ae370d149c26210f93504f738c4bb0b"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "fbd8648346a6510a665a065676b14e5f51c0cb79ec172616a1669b692f75d4cai0",
+        "txid": "fbd8648346a6510a665a065676b14e5f51c0cb79ec172616a1669b692f75d4ca",
+        "confirmed": true,
+        "block_height": 962537,
+        "block_hash": "000000000000000000014a87b57d05d9b99b174e03b2fc0b385cba3b2ca5382d",
+        "block_time_utc": "2026-08-15T07:25:15+00:00",
+        "byte_length": 2271,
+        "payload_sha256": "sha256:5c32ce304932271b160e4b4af7b0a4d493463db07e4878b3084813366857aabc",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 962515,
+        "seed_block_hash": "000000000000000000016a8d9a076c48608c7e5928fb40b8695c87d290506a53",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W34",
+      "regime": "v1-weekly-audit",
+      "week_start": "2026-08-17",
+      "week_end": "2026-08-21",
+      "trading_days": 5,
+      "weekly_trade_count": 98,
+      "commitment": {
+        "inscription_id": "3350c15f5d52ce50b25929f312e1d538c3c814b9250a7ced404eb37f0592a6a3i0",
+        "txid": "3350c15f5d52ce50b25929f312e1d538c3c814b9250a7ced404eb37f0592a6a3",
+        "confirmed": true,
+        "block_height": 963516,
+        "block_hash": "0000000000000000000226146ab2473338dee9ecd5919d5e002fb315003c3b16",
+        "block_time_utc": "2026-08-22T02:43:07+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 4243,
+        "payload_sha256": "sha256:2c3be150be56b11c4bcd507fe5b702c2f1f81f4694d9e311e1e3ff4d65127662",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.1.0",
+        "weekly_trade_pool_root": "sha256:a568379993991be01b81ed12c68c7a28314440d72cbe992309d2ba8274dc102a",
+        "previous_weekly_commitment_inscription_id": null,
+        "pointer_status": "none-in-v1-schema"
+      },
+      "index_metrics": null,
+      "daily_hashes": [
+        {
+          "date": "2026-08-17",
+          "trade_count": 12,
+          "ordered_trade_merkle_root": "sha256:cd3129a8510af7b74fcdf0c88e756b1f1abaf7478ec61655ffff95e508ad77d2",
+          "weekly_public_rows_root": "sha256:f7593b6546aaadab6f45ad9ebcdd16b73bd29f76aa589d8a452d301a9edb47f4"
+        },
+        {
+          "date": "2026-08-18",
+          "trade_count": 12,
+          "ordered_trade_merkle_root": "sha256:b325216850bb3939a94127839c78f02636a0c9713be317e74496125d4064d6cb",
+          "weekly_public_rows_root": "sha256:b962d8006ddbf75e1d0625b9d8859527363ee2f87c153723166d1e76e21da8eb"
+        },
+        {
+          "date": "2026-08-19",
+          "trade_count": 30,
+          "ordered_trade_merkle_root": "sha256:0d39ad456bc1e81c53724ad721f24a32cc54a4c40840e6a2295a055be0a8305d",
+          "weekly_public_rows_root": "sha256:3a9567c68c9cc36cba935cef7e55af7e43e2628794d975bb27133abdb7f0d374"
+        },
+        {
+          "date": "2026-08-20",
+          "trade_count": 25,
+          "ordered_trade_merkle_root": "sha256:c23666859b7a30e32db1ceeee0e2d7fb3c2360f96353869163da0cb834c61555",
+          "weekly_public_rows_root": "sha256:a5ed66e6e072fa918b1a3d112bce97205da3311d6913bba144bd6d0757ebc638"
+        },
+        {
+          "date": "2026-08-21",
+          "trade_count": 19,
+          "ordered_trade_merkle_root": "sha256:531cefd0efbfe83745cb63f8fc7ec4e06e2beca8a04cea5a98e8e8dc633468a1",
+          "weekly_public_rows_root": "sha256:7d4a17faf4dabf1991be8438247656cc769b042793df3806374ec52f13a49318"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "a6df62dc56a890543e9b47386032a4c6f595681b0e9e08d9db8b37271a04c331i0",
+        "txid": "a6df62dc56a890543e9b47386032a4c6f595681b0e9e08d9db8b37271a04c331",
+        "confirmed": true,
+        "block_height": 963593,
+        "block_hash": "00000000000000000000e457a5d3fae6a6412e995a492a897745a99bb59951e5",
+        "block_time_utc": "2026-08-22T13:46:02+00:00",
+        "byte_length": 2267,
+        "payload_sha256": "sha256:4e9c95d59cde37c34e3e191c441041b622c071792f07cdf0a8e3d241188f2378",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 963522,
+        "seed_block_hash": "000000000000000000003490336e8a84ac1ec743d1a299361ac573ce08e9f1a1",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W36",
+      "regime": "v1-weekly-audit",
+      "week_start": "2026-08-31",
+      "week_end": "2026-09-04",
+      "trading_days": 5,
+      "weekly_trade_count": 68,
+      "commitment": {
+        "inscription_id": "5e14ab6facd8cce03fe782362323b21469dfcbcddab960700cc5cb845ef230edi0",
+        "txid": "5e14ab6facd8cce03fe782362323b21469dfcbcddab960700cc5cb845ef230ed",
+        "confirmed": true,
+        "block_height": 965519,
+        "block_hash": "00000000000000000001df4ad2e8689763403c651f251e9e3698a5505e7312c7",
+        "block_time_utc": "2026-09-04T19:44:28+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 4372,
+        "payload_sha256": "sha256:c4d58fda900b05f36b94cfdba15a578de8d803ffa1f4aa2f91c630fed0cf9c02",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.1.0",
+        "weekly_trade_pool_root": "sha256:f3f1ede98bf4911882d5171e505b37560e6191f6c5827ff02b6d7296c1b3b595",
+        "previous_weekly_commitment_inscription_id": null,
+        "pointer_status": "none-in-v1-schema"
+      },
+      "index_metrics": null,
+      "daily_hashes": [
+        {
+          "date": "2026-08-31",
+          "trade_count": 15,
+          "ordered_trade_merkle_root": "sha256:45092e56167128a118bb3f0eca27814cad3a8f4621488261c6f8f60ba349df88",
+          "weekly_public_rows_root": "sha256:9709dc560bf00ac2088f4bf9cf64973d0dd39ca2409d2fd44af66caf620e8cae"
+        },
+        {
+          "date": "2026-09-01",
+          "trade_count": 16,
+          "ordered_trade_merkle_root": "sha256:09fc41339a150e503d780c12eef37169a4a79dce7b9b89d387e8caf7cfbe6cf6",
+          "weekly_public_rows_root": "sha256:e07eb876f483cadc756f949aa10b53b30e273b13d32c38a727676c33ce1b62cd"
+        },
+        {
+          "date": "2026-09-02",
+          "trade_count": 13,
+          "ordered_trade_merkle_root": "sha256:440c024a05eea2d9f4b97099ad5648f157434c3fb2611e8e2468f717cbd91792",
+          "weekly_public_rows_root": "sha256:f16f1659eee9f73b3a5e940923192632f0b61ffddd425b705632c4289f90fdf7"
+        },
+        {
+          "date": "2026-09-03",
+          "trade_count": 10,
+          "ordered_trade_merkle_root": "sha256:61676b847a9f03475337b78087e66263c168437990a6cc55d1feafac6d404f26",
+          "weekly_public_rows_root": "sha256:e69b6fea472a4a2e41a960daa7bf862611811779bfa1f4307eccd8be080039bb"
+        },
+        {
+          "date": "2026-09-04",
+          "trade_count": 14,
+          "ordered_trade_merkle_root": "sha256:eeecb5505abebaa02fa736beb0ceeef22c97cbf79d37979e5bb8df90e03ee1e0",
+          "weekly_public_rows_root": "sha256:cc01573a13c17efc399beb345f2932c97e2290f72a31e4e15d76d77ceac1d8f0"
+        }
+      ],
+      "reveal": null,
+      "reveal_status": "commit-only-no-confirmed-reveal"
+    },
+    {
+      "week": "2026-W37",
+      "regime": "v1-weekly-audit",
+      "week_start": "2026-09-07",
+      "week_end": "2026-09-11",
+      "trading_days": 5,
+      "weekly_trade_count": 53,
+      "commitment": {
+        "inscription_id": "3b1fa62d3f78d165bdc94c056cbe0e2de60e2af756e066b83771176f25d77c31i0",
+        "txid": "3b1fa62d3f78d165bdc94c056cbe0e2de60e2af756e066b83771176f25d77c31",
+        "confirmed": true,
+        "block_height": 966712,
+        "block_hash": "00000000000000000000016cb3408982b0e136f878b0dc60668b773472c29689",
+        "block_time_utc": "2026-09-12T19:37:55+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 1567,
+        "payload_sha256": "sha256:d9f1e75d23cfbc82063007fbc7bf98d15b356a24c6530d1d3fd7568c6d27d454",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.0.0-transition",
+        "weekly_trade_pool_root": "sha256:3cbf943360e5602f042e08a21febc29c72a88111a3af715a083142b7ca2c6543",
+        "previous_weekly_commitment_inscription_id": null,
+        "pointer_status": "none-in-v1-schema"
+      },
+      "index_metrics": null,
+      "daily_hashes": [
+        {
+          "date": "2026-09-07",
+          "trade_count": 10
+        },
+        {
+          "date": "2026-09-08",
+          "trade_count": 7
+        },
+        {
+          "date": "2026-09-09",
+          "trade_count": 6
+        },
+        {
+          "date": "2026-09-10",
+          "trade_count": 15
+        },
+        {
+          "date": "2026-09-11",
+          "trade_count": 15
+        }
+      ],
+      "reveal": {
+        "inscription_id": "47c440167dbb08f412c5d246a6b9490767d163f77573f1e8de65777dfaaa2ed1i0",
+        "txid": "47c440167dbb08f412c5d246a6b9490767d163f77573f1e8de65777dfaaa2ed1",
+        "confirmed": true,
+        "block_height": 966759,
+        "block_hash": "0000000000000000000077bfa946a27995c971500181680cd357db1af464d80e",
+        "block_time_utc": "2026-09-13T02:33:51+00:00",
+        "byte_length": 847,
+        "payload_sha256": "sha256:5e2cdb58203d78c98445b9338389602908ceb0e8b6a0af57d78cfc7e511d8514",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 966718,
+        "seed_block_hash": "000000000000000000022442824ed87ca2ee54b4cbc3cb685466c2326e1b36f8",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W38",
+      "regime": "v2-weekly-operating",
+      "week_start": "2026-09-14",
+      "week_end": "2026-09-18",
+      "trading_days": 5,
+      "weekly_trade_count": 64,
+      "commitment": {
+        "inscription_id": "79778ae7028e5e3304ef93894b35aa1472b9ca55ede3cc0108e66914063ddb68i0",
+        "txid": "79778ae7028e5e3304ef93894b35aa1472b9ca55ede3cc0108e66914063ddb68",
+        "confirmed": true,
+        "block_height": 967559,
+        "block_hash": "00000000000000000001cd3d53dcf320ec5253a3736ac077241b8114b0eb4ae4",
+        "block_time_utc": "2026-09-18T13:35:55+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 6594,
+        "payload_sha256": "sha256:5db875c08f616323c0a6c43cba47c23e92019ebbd64e8ce948c37b5e363dc46b",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.1.0",
+        "weekly_trade_pool_root": "sha256:c5c63f02f29513e1ca12d5fa571cd59704d30dea8c3873e2b67b3169c17a48be",
+        "previous_weekly_commitment_inscription_id": "3b1fa62d3f78d165bdc94c056cbe0e2de60e2af756e066b83771176f25d77c31i0",
+        "pointer_status": "exact-previous-week-commitment"
+      },
+      "index_metrics": {
+        "week_end_strategy_index": "105.2640",
+        "week_start_strategy_index": "104.2618"
+      },
+      "daily_hashes": [
+        {
+          "date": "2026-09-14",
+          "trade_count": 13,
+          "strategy_index": "104.2618",
+          "daily_return_pct": "0.1555",
+          "daily_child_hash": "sha256:64b0fe91d782bb5fe434c221b4ea967a1443654e22a0494d8589fd7cd513eac6",
+          "evidence_hash": "sha256:c8d47df0c7b2c410a432e619b0b5b883aa832055d486588e7370a06ac58a79da",
+          "ordered_trade_merkle_root": "sha256:feb5a0262527198e4d08a52ebbd05068b7dfa6c145ad27807e4ab5efd8b4be3f",
+          "position_episode_merkle_root": "sha256:57dbdd9459ee71cb4a6cdf44b8f9de294547984ebeb09c09d62b6099f33df479",
+          "source_merkle_root": "sha256:247edc15b3c140c108acd7cc46a72b435ff69fbdbf54d0172c8720c9a128ea81",
+          "source_manifest_hash": "sha256:e0514e1e457fadae37eb8cec1ad00d43383c8ce0d12a2a2169e6ef9b921b0b1a"
+        },
+        {
+          "date": "2026-09-15",
+          "trade_count": 13,
+          "strategy_index": "103.8216",
+          "daily_return_pct": "-0.4222",
+          "daily_child_hash": "sha256:e2229ef80bd9512f785be256d7664828009ff59816e9ebd49070b47fab33bd5b",
+          "evidence_hash": "sha256:8bdb08d057f39123703eff31f25d8354eb60102248d512e9422634312fdbd539",
+          "ordered_trade_merkle_root": "sha256:a0f0a69b3e58c71e55bb0c7de286c885b2f5ebf31e7f0092812cabd2abeea0c2",
+          "position_episode_merkle_root": "sha256:6529a8dbf4527b8909293fee7c4a18d0065f9541f5d08d88ad71f9450383cdea",
+          "source_merkle_root": "sha256:9b619e726f876f10f8e1c423741efc3ef4657ea6ebab595e6f080b952cf55c6d",
+          "source_manifest_hash": "sha256:f510c87326884a6938b5a3dc51376372a5dfd7d336359f02c42d131759777347"
+        },
+        {
+          "date": "2026-09-16",
+          "trade_count": 11,
+          "strategy_index": "104.3281",
+          "daily_return_pct": "0.4879",
+          "daily_child_hash": "sha256:c3f0f8ed14e5af596ef9d8bfa96f871f922574943ed504daf6945e2dc1c5a8bc",
+          "evidence_hash": "sha256:7a85732a6b36c7165b5dd55101950dcd434f7ff2244b1cfb7c9ee577393d165e",
+          "ordered_trade_merkle_root": "sha256:b96e4d4d223f4714a48f00f1bc246e731cf68a9e39ffce45a81300472c08a9dc",
+          "position_episode_merkle_root": "sha256:9e875bff43b0e03d54b39b23f7b9ce016bc91cabb8a4795fe7f3f7d379098f35",
+          "source_merkle_root": "sha256:4ba1868e2a1ed1d0c42977c8dbcffe7569ed9dc113638602f214c535112473c3",
+          "source_manifest_hash": "sha256:91e92a7f4dc9dead4eb01c87dcf2675b5203ae08ab74779a2cdfcda0d6a21ce3"
+        },
+        {
+          "date": "2026-09-17",
+          "trade_count": 12,
+          "strategy_index": "103.9112",
+          "daily_return_pct": "-0.3996",
+          "daily_child_hash": "sha256:9680998cf64d1c69ad5fbb6e1a44978bbfb292407d7aa5faaa9f1c491d29ae32",
+          "evidence_hash": "sha256:cd2a1d8783ad6468811c9765ce5f8c70b995002c2d0bdc8e24ea5127a14eaef7",
+          "ordered_trade_merkle_root": "sha256:b268ef708d7ca183b9ee8faaace94ff5421a8a84a5e4007b382828fd8d4d4f78",
+          "position_episode_merkle_root": "sha256:fc1e4b86abab71fdb77b417c654f54819dff19d50acdcd2f9ab06ed8d08b1cb3",
+          "source_merkle_root": "sha256:c0293fd68aa0af4fbc54d76207891ff6de75ab8bd907774e8f41db54a5791fe7",
+          "source_manifest_hash": "sha256:e8792e66b8e6eed0fd85599c8f8ad43c9798d1946f67fdb69c5d549bdc077186"
+        },
+        {
+          "date": "2026-09-18",
+          "trade_count": 15,
+          "strategy_index": "105.2640",
+          "daily_return_pct": "1.3019",
+          "daily_child_hash": "sha256:8e3ea4279c3f8eeffbad2682b47c341ef6d406e4f5fcfccd240cdb3b20b4e328",
+          "evidence_hash": "sha256:42757430ddd41627465ff053f7ba125f2eb94385d88790620e69bf47454f29fb",
+          "ordered_trade_merkle_root": "sha256:cc6463cacbf3ee33d5200631bb430deb9b350e05a7abb5da5c49841a315754f1",
+          "position_episode_merkle_root": "sha256:c9319548afbd118e882902efbec6b743a52941d118128bf0664393a84391004c",
+          "source_merkle_root": "sha256:0835eee2d21ecd41b3530efbd3d39503b2e3164be79d00bad13e6eccb9cc8a73",
+          "source_manifest_hash": "sha256:2049cecd30ff8c26803de85b333a0a071101b6f4dfb5f37ba95d06ab99576cfb"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "62f9b306e72a2442b528401b280547add829d65d7eb407335ef55bc51bab225fi0",
+        "txid": "62f9b306e72a2442b528401b280547add829d65d7eb407335ef55bc51bab225f",
+        "confirmed": true,
+        "block_height": 967627,
+        "block_hash": "000000000000000000018b73724557bb625818c507ef20c82ac66b81864e0bca",
+        "block_time_utc": "2026-09-18T23:19:47+00:00",
+        "byte_length": 2155,
+        "payload_sha256": "sha256:1c5e07d165e61a46dfcfe99f84114ad346b90d4d603aa6d4080cf8123b17290d",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 967565,
+        "seed_block_hash": "000000000000000000021303a2a11552359a162f2ab3ee5de083d0af8f4645d8",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W39",
+      "regime": "v2-weekly-operating",
+      "week_start": "2026-09-21",
+      "week_end": "2026-09-24",
+      "trading_days": 4,
+      "weekly_trade_count": 53,
+      "commitment": {
+        "inscription_id": "97822fcfa2e81c70abd1402043db95a6b5347ec0a8f9d6b654a86bdb5205746bi0",
+        "txid": "97822fcfa2e81c70abd1402043db95a6b5347ec0a8f9d6b654a86bdb5205746b",
+        "confirmed": true,
+        "block_height": 968381,
+        "block_hash": "00000000000000000001e9c6b979aafe99b2b001d77e37ef54fdc3828a9a7692",
+        "block_time_utc": "2026-09-24T09:55:39+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 6479,
+        "payload_sha256": "sha256:2316b1e145cb69167d8532af68c9d32fd84616488018f36dc2e2d40a8f06bfb9",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.2.0",
+        "weekly_trade_pool_root": "sha256:a6149ee6981a984590b0a60dcc83bacda51144b45ff6b724acf3c90538a912ed",
+        "previous_weekly_commitment_inscription_id": "79778ae7028e5e3304ef93894b35aa1472b9ca55ede3cc0108e66914063ddb68i0",
+        "pointer_status": "exact-previous-week-commitment"
+      },
+      "index_metrics": {
+        "prior_strategy_index": "105.2639",
+        "week_start_strategy_index": "104.9752",
+        "week_end_strategy_index": "102.9428",
+        "weekly_return_pct": "-2.2050"
+      },
+      "daily_hashes": [
+        {
+          "date": "2026-09-21",
+          "trade_count": 11,
+          "strategy_index": "104.9752",
+          "daily_return_pct": "-0.2743",
+          "daily_child_hash": "sha256:2c69b27c86eb512ad1e82e81dca9b40537a4bf635ba56c825a1b65e0589c2e76",
+          "evidence_hash": "sha256:f6b8d2f7cdbb97c7fb24382c3388a885178c61eecbcacc150a53f9ad81ac18bb",
+          "public_trade_merkle_root": "sha256:d2fef374073a603f095cff48567e39e75184bc01fa7b547626a2c91601b89ea5",
+          "ordered_trade_merkle_root": "sha256:952bc9b1c571ac7caa6cae5abfca0a497011443383c17227949a0f58f06f95ca",
+          "position_episode_merkle_root": "sha256:bb6eb6088e11a78f6aaa074562b34b5336401904df2111f4bad89db078ee4a06",
+          "source_merkle_root": "sha256:9398b311932428c51f0a3a7de3efa71578af053f9937cbed4a16c8e50b76a2b9",
+          "source_manifest_hash": "sha256:24fd2d9356961ef4e6c4917ca19ebd92b709d6a5ab0d2ed5ec640f13470d617c"
+        },
+        {
+          "date": "2026-09-22",
+          "trade_count": 14,
+          "strategy_index": "106.0727",
+          "daily_return_pct": "1.0455",
+          "daily_child_hash": "sha256:ba182ecf53aebaaaa81dd80be5d483731d8593adc7d603396206ee9a52c9f659",
+          "evidence_hash": "sha256:59835fd7e58ff4683bbdbf85850deccc4f75e39db3b81e6fa7eb69f4ccf87ced",
+          "public_trade_merkle_root": "sha256:c4d098c37a59caaed9f25803f0a3adb81cbfec6720bee4c8b8adf8448cf5bdc4",
+          "ordered_trade_merkle_root": "sha256:76541019000b01f964f42d1b40623820f889f34309f8347af7322430fa3f7ffb",
+          "position_episode_merkle_root": "sha256:c1c5e9c8df29ba5af1e22afdfef3726c24dd8091e191ff1fefed64928dffcc73",
+          "source_merkle_root": "sha256:d697f4a22c869afa219bac2b2c12a6a38c4c52cec92827b1cad5d2964f84691e",
+          "source_manifest_hash": "sha256:c54035582a3f5b18d5d32ef69d650d0f85d5240c92026d12c585c3faed4045b6"
+        },
+        {
+          "date": "2026-09-23",
+          "trade_count": 17,
+          "strategy_index": "105.1947",
+          "daily_return_pct": "-0.8278",
+          "daily_child_hash": "sha256:788480340cb4e1eee8995c5e031d23d445103241434136e3274e0a62cb63d1f0",
+          "evidence_hash": "sha256:9c18281b0b5b9a890a3346f8349f9b51e4d20b0096c111f0b88720e0fad5a091",
+          "public_trade_merkle_root": "sha256:f41ee1dbd4e8c36d30298721f16617b18a653ded8ed2f8b60d970fe13b938e25",
+          "ordered_trade_merkle_root": "sha256:1c1f05ea38167e3fbf00c2a74ea8c8d26e022941356a604c25084ffb33c8763f",
+          "position_episode_merkle_root": "sha256:d23219ea0c92483f02d1100089272500b68198e9a235bc2115d126d9d60392b4",
+          "source_merkle_root": "sha256:dfdc30329793ad0683553a7b3b78aa057a4f5bd1d9e0612681a9da8a612c6766",
+          "source_manifest_hash": "sha256:3e961c5ed7f9d5e81ccfb915eb53169e8966c8c116da4240b92732d7e9f83654"
+        },
+        {
+          "date": "2026-09-24",
+          "trade_count": 11,
+          "strategy_index": "102.9428",
+          "daily_return_pct": "-2.1407",
+          "daily_child_hash": "sha256:f054191ccc7df114bc2e178624e16796a8299729f798d9eab0926fc8248a985e",
+          "evidence_hash": "sha256:42d661bb86c15fa784b88cedbe5f60bef0a99c87d53a924bc59bbf2c71e6fb3d",
+          "public_trade_merkle_root": "sha256:257e6990e3309bbcb43528302175ef361cba581a11af3b60d3d8495de9198cfd",
+          "ordered_trade_merkle_root": "sha256:d9d8662ca51f94ed8be8302e4bd385ef11255b99713cc66e6aa29fe8fd36c655",
+          "position_episode_merkle_root": "sha256:674bb8237604a1540f8317fd783b7d5c8302854f19120821450a92aea62d339a",
+          "source_merkle_root": "sha256:3771b9f0fd3fcfa40a8c976e8ea9bbaf3634acb9ee5ed9a1af8614a88b3ec31f",
+          "source_manifest_hash": "sha256:9598a580835fb5e29a536e1e86f2c3fe879bc7ab97ae1588bc7f8f617a860623"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "421290394a3b400e65e4e5c2ffae77a97741cca5b84ac01af71c50656e4133f5i0",
+        "txid": "421290394a3b400e65e4e5c2ffae77a97741cca5b84ac01af71c50656e4133f5",
+        "confirmed": true,
+        "block_height": 968462,
+        "block_hash": "0000000000000000000166c01a03f96daf88a57a401a2e7b92ea7d46ec08a083",
+        "block_time_utc": "2026-09-24T22:59:02+00:00",
+        "byte_length": 2154,
+        "payload_sha256": "sha256:18aa40de9ca4ab6c2753cdfe59bb1c47b6a937eda1dfd70ce4f4e61a9467176d",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 968387,
+        "seed_block_hash": "00000000000000000000d06f0422362453240b93bdb36ab2cdd0e71903259aa9",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W40",
+      "regime": "v2-weekly-operating",
+      "week_start": "2026-09-28",
+      "week_end": "2026-09-30",
+      "trading_days": 3,
+      "weekly_trade_count": 32,
+      "commitment": {
+        "inscription_id": "750e37241fba6839959654540d873a3532490450dd661303d7c360546c8a1509i0",
+        "txid": "750e37241fba6839959654540d873a3532490450dd661303d7c360546c8a1509",
+        "confirmed": true,
+        "block_height": 969287,
+        "block_hash": "00000000000000000000f89c52a3e19ed99ac5069a1f3300903c68b448c3d560",
+        "block_time_utc": "2026-09-30T09:30:47+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 5303,
+        "payload_sha256": "sha256:29af4ed28a716753fe587cfb6250c1da504084ab8b8a43e491ddacb2b44c7106",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.2.0",
+        "weekly_trade_pool_root": "sha256:c136ad7d604d8be39d2c1b895c2e591823fbe8f5fb79690d9a2b8187b3ac530a",
+        "previous_weekly_commitment_inscription_id": "62f9b306e72a2442b528401b280547add829d65d7eb407335ef55bc51bab225fi0",
+        "pointer_status": "historical-pointer-mismatch-preserved-verbatim",
+        "pointer_note": "Immutable on-chain payload points to 62f9b306e72a2442b528401b280547add829d65d7eb407335ef55bc51bab225fi0 (2026-W38 reveal inscription) instead of 2026-W39 commitment 97822fcfa2e81c70abd1402043db95a6b5347ec0a8f9d6b654a86bdb5205746bi0; preserved verbatim from Bitcoin L1 witness."
+      },
+      "index_metrics": {
+        "prior_strategy_index": "102.9429",
+        "week_start_strategy_index": "101.3386",
+        "week_end_strategy_index": "100.8434",
+        "weekly_return_pct": "-2.0395"
+      },
+      "daily_hashes": [
+        {
+          "date": "2026-09-28",
+          "trade_count": 9,
+          "strategy_index": "101.3386",
+          "daily_return_pct": "-1.5584",
+          "daily_child_hash": "sha256:2cdb3d088bdb496767726b7e34f94e9c4ce4fbaa5775f39b6c1ce63e65c14db7",
+          "evidence_hash": "sha256:c8c5902c21ad43a56d762354399fdc9a89c3ea305731bf8d4571257dd7c8f36d",
+          "public_trade_merkle_root": "sha256:b82728540d1d13d8663476b20b986a7598b19638964fa5607e6cd0e43b57efeb",
+          "ordered_trade_merkle_root": "sha256:4d9eff28983b85ed95b7fb49bc4626265b42249e21e41b4b91e1de1603575512",
+          "position_episode_merkle_root": "sha256:416e1ea1d65410ee494597bf5327c55edf35f2fc787f30f72f564dfafe028817",
+          "source_merkle_root": "sha256:dd7468adead6a011baaccf683b7e9e30bba0b66163e3bc3020fcea112e5891ff",
+          "source_manifest_hash": "sha256:37b50d1348edd5d7831d8e851e5e2ce8486fee498f59405bdcd2af6c3c07c514"
+        },
+        {
+          "date": "2026-09-29",
+          "trade_count": 8,
+          "strategy_index": "101.4289",
+          "daily_return_pct": "0.0891",
+          "daily_child_hash": "sha256:7a2f4fcd67fa50e851aede78e30897e28283f055dcabeb0df832fb602adea57e",
+          "evidence_hash": "sha256:87c9735712fca1503899f481d5312fa727e8e68dbe40540ff2c35817240531ea",
+          "public_trade_merkle_root": "sha256:c39238ac8bd3816e2699e2cd524c7c07c225150a2d79d0c83cd314e8fb9cdc94",
+          "ordered_trade_merkle_root": "sha256:f0e44faf21e419962b70c9d84ee65f81bd91ecf11bcd0026bf57bc89bc1486e6",
+          "position_episode_merkle_root": "sha256:041a41dd23a6c8879eee44cdf2ceefabc4038db51a71902ce5025cb69b9690ff",
+          "source_merkle_root": "sha256:e9237f48fb40e9738c98ac3063f9b7b5ba8f1f30b8b29cf1c63c9b7cc6b8c5d0",
+          "source_manifest_hash": "sha256:5ba6e15d740f0080c38b1bafb3d41baf54a381d08991f9a3ef800ac34c3ea4ed"
+        },
+        {
+          "date": "2026-09-30",
+          "trade_count": 15,
+          "strategy_index": "100.8434",
+          "daily_return_pct": "-0.5773",
+          "evidence_hash": "sha256:7e876d511bb72e4471c1478e7dfd5a09b129be285521e73aa4f37513967c9cc6",
+          "public_trade_merkle_root": "sha256:7dd16e9d3745c746e93d44dda4d891b6cd36e1b7c474cf90bc3f32258e5da93f",
+          "ordered_trade_merkle_root": "sha256:8e71e84ef58e2235e052d32e0401f3d324e22f03a8247eeca1a31afb75d20494",
+          "position_episode_merkle_root": "sha256:80673645345b8644f14eee551616ac94c30808c4432011e3dcb505d6b682aff4",
+          "source_merkle_root": "sha256:8e71e84ef58e2235e052d32e0401f3d324e22f03a8247eeca1a31afb75d20494",
+          "source_manifest_hash": "sha256:79c5579df0d3422ad35ebf754967ac8fa3163b2200564367e4c198521916d2e8"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "e074804d2524bb9170b15bf983f7ed5a3dc9160bfac26d7bcfcb05cd747bb3d2i0",
+        "txid": "e074804d2524bb9170b15bf983f7ed5a3dc9160bfac26d7bcfcb05cd747bb3d2",
+        "confirmed": true,
+        "block_height": 969331,
+        "block_hash": "00000000000000000000d0c11491d612e0a9bef271d4708eb3e548e5af0c9059",
+        "block_time_utc": "2026-09-30T17:57:31+00:00",
+        "byte_length": 2039,
+        "payload_sha256": "sha256:b911ae64db66f0530da597ad5aab43845f662af142cf82c0ba42b109fb21e711",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 969293,
+        "seed_block_hash": "00000000000000000001607593ebee8773f5492899c001d0556e5138ffab279c",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W41",
+      "regime": "v2-weekly-operating",
+      "week_start": "2026-10-08",
+      "week_end": "2026-10-09",
+      "trading_days": 2,
+      "weekly_trade_count": 18,
+      "commitment": {
+        "inscription_id": "0fece084a3597912ba679693c9428703887d927d680a88ab67a04e57cafe7800i0",
+        "txid": "0fece084a3597912ba679693c9428703887d927d680a88ab67a04e57cafe7800",
+        "confirmed": true,
+        "block_height": 970748,
+        "block_hash": "00000000000000000001708c330c35bf5c57cc39f549eafe5a73496771d56b45",
+        "block_time_utc": "2026-10-10T09:15:51+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 4247,
+        "payload_sha256": "sha256:3394a44c3ca55e3b549885b761a5b2b2656d45b5e9d96367e4e06e0504c4c512",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.2.0",
+        "weekly_trade_pool_root": "sha256:57b730d361ccdc8936458c8a4c6f39f3feb2fd387347f4ca92e6a3ea957ced90",
+        "previous_weekly_commitment_inscription_id": "750e37241fba6839959654540d873a3532490450dd661303d7c360546c8a1509i0",
+        "pointer_status": "exact-previous-week-commitment"
+      },
+      "index_metrics": {
+        "prior_strategy_index": "100.8434",
+        "week_start_strategy_index": "97.5514",
+        "week_end_strategy_index": "99.0170",
+        "weekly_return_pct": "-1.8112"
+      },
+      "daily_hashes": [
+        {
+          "date": "2026-10-08",
+          "trade_count": 9,
+          "strategy_index": "97.5514",
+          "daily_return_pct": "-3.2645",
+          "daily_child_hash": "sha256:1aff2491d6e111673ddc2bb5c109e263cf34fcc265ab001d115ba548927fc4cc",
+          "evidence_hash": "sha256:4288271125fdb5397d710d0746228640b01571667c4503b933f1b4ae8e7bef60",
+          "public_trade_merkle_root": "sha256:7b593e0f54e4bb06ecfc875d975d9238690197f66dccb42ffc107113a2e63b8e",
+          "ordered_trade_merkle_root": "sha256:d3e43123b2d35621c3f4fe50a5893fa756bd1b764445946573933454a676be27",
+          "position_episode_merkle_root": "sha256:7107e3c8d3c7a84bda1d272952bb0cf3cde90312d502670abeaeb5fb28a20151",
+          "source_merkle_root": "sha256:c38eb55cd8f482350be22a47f8cc25dde2998341f807b374a13cfc9de01cc8aa",
+          "source_manifest_hash": "sha256:43ef7834cc6baa8605c55bae630ee483194f659e2bb8ddad6bc232223d25a500"
+        },
+        {
+          "date": "2026-10-09",
+          "trade_count": 9,
+          "strategy_index": "99.0170",
+          "daily_return_pct": "1.5023",
+          "daily_child_hash": "sha256:0212eca25b08b985cbfbe5f69dcf6e2ddc5ff6b5775fe1401e64b7689e2fc542",
+          "evidence_hash": "sha256:3356356c60941e97968fcfda91cf1f78f433224abf62f90be0b265ac5585bfc3",
+          "public_trade_merkle_root": "sha256:f0b483962e177c3df1be0719387d6f1278d1fd827d4dfc027099ea9e45b70191",
+          "ordered_trade_merkle_root": "sha256:59bb9379979aea8e7d1333c54562d9525832b7731cc3be6456618356fdce1c40",
+          "position_episode_merkle_root": "sha256:9144091a64d69f2730b0c78535d72028d16d381a8a24a370d632862d56034f0d",
+          "source_merkle_root": "sha256:2c96ffd5cc6ae465476be6a77aa9cecdad71c7233d60426622575b12c293240c",
+          "source_manifest_hash": "sha256:9c626d817c23812df2bed9765ebbda9854dcf8268314944c3d25ae94a7ace01f"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "b98ae489bad762a721ab04e57a20b23ec282d5fd7cf47a3a774bd552e7970119i0",
+        "txid": "b98ae489bad762a721ab04e57a20b23ec282d5fd7cf47a3a774bd552e7970119",
+        "confirmed": true,
+        "block_height": 970780,
+        "block_hash": "00000000000000000001884f9fc86eab0a6f0d7f313a4e1917197dd2e6faccd1",
+        "block_time_utc": "2026-10-10T15:02:54+00:00",
+        "byte_length": 2040,
+        "payload_sha256": "sha256:65703d27f07c9b76e3a8fea5f9eb8988d1fa3c9a85de28bf9b9099424b1806cc",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 970754,
+        "seed_block_hash": "00000000000000000000f82f3b60e8905801c2dcbb96d6f24fed4bd87dcb15e4",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W42",
+      "regime": "v2-weekly-operating",
+      "week_start": "2026-10-12",
+      "week_end": "2026-10-16",
+      "trading_days": 5,
+      "weekly_trade_count": 50,
+      "commitment": {
+        "inscription_id": "012b2e02d9cfc83545d9be646a0cbe7d1f472313f475aa1bf07af5916fc9198ai0",
+        "txid": "012b2e02d9cfc83545d9be646a0cbe7d1f472313f475aa1bf07af5916fc9198a",
+        "confirmed": true,
+        "block_height": 971693,
+        "block_hash": "000000000000000000012612ca3657980758c5ee9972015871c61403d5305897",
+        "block_time_utc": "2026-10-16T09:41:19+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 5640,
+        "payload_sha256": "sha256:18e946ee75fae89bb55fffed8574207fbcf0a88af4036827121a59a3f4ea61c3",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.2.0",
+        "weekly_trade_pool_root": "sha256:47e406bdd7f1fa5aa536a17b342a64a4991053292120dba790ea1c77152b4032",
+        "previous_weekly_commitment_inscription_id": "0fece084a3597912ba679693c9428703887d927d680a88ab67a04e57cafe7800i0",
+        "pointer_status": "exact-previous-week-commitment"
+      },
+      "index_metrics": {
+        "prior_strategy_index": "99.0170",
+        "week_start_strategy_index": "99.1781",
+        "week_end_strategy_index": "97.9296",
+        "weekly_return_pct": "-1.0981"
+      },
+      "daily_hashes": [
+        {
+          "date": "2026-10-12",
+          "trade_count": 11,
+          "strategy_index": "99.1781",
+          "daily_return_pct": "0.1627",
+          "evidence_hash": "sha256:eff7bdc30e27f21e69cf79b89761b2f95b37c598a03a37c202dfd4ef74eecfed",
+          "public_trade_merkle_root": "sha256:ec4a287746f9281a3bdef5e5902f3c349bb26210ed60f274b39c6c4fbe891aa9",
+          "ordered_trade_merkle_root": "sha256:a1344610f524ce3ec732310238e9a1e996754a1aa1a00131fccd369dc0e7d2e1"
+        },
+        {
+          "date": "2026-10-13",
+          "trade_count": 7,
+          "strategy_index": "98.9361",
+          "daily_return_pct": "-0.2440",
+          "evidence_hash": "sha256:76cded943882f9f202b6190e218c5bb494fc78624de46f661fe670c6e4daada7",
+          "ordered_trade_merkle_root": "sha256:7db5b99faaddc4923eefac524f2350c7a3ef8310a10a99520c943760630e6329"
+        },
+        {
+          "date": "2026-10-14",
+          "trade_count": 24,
+          "strategy_index": "97.9610",
+          "daily_return_pct": "-0.9855",
+          "evidence_hash": "sha256:8fd3a47d6d330ca1be39ae95eedbdb5eb35570fbde7538c69ce1b3bda4f264b2",
+          "public_trade_merkle_root": "sha256:d8c5f6a917e841f1737be59b3ce57ff1712aef4a5bfce960e09d134b2f293c11",
+          "ordered_trade_merkle_root": "sha256:f3cb32c9487a52ffb82b56d82ee869827a9379a93243c19bf3700bbe3b8229c4"
+        },
+        {
+          "date": "2026-10-15",
+          "trade_count": 4,
+          "strategy_index": "97.4613",
+          "daily_return_pct": "-0.5102",
+          "evidence_hash": "sha256:2c2babbe16c990c651e54a54b411125dbd69452fa90a78d675b4695e53af70e7",
+          "ordered_trade_merkle_root": "sha256:4a79f8c28736c3d304d89ebee2f299e02938c0a58d6321d677eadc6c26dcb550"
+        },
+        {
+          "date": "2026-10-16",
+          "trade_count": 4,
+          "strategy_index": "97.9296",
+          "daily_return_pct": "0.4805",
+          "evidence_hash": "sha256:678fc5dd803d93840bdf973790776a6ce8991b8703662daf4f4e34ebca74b23d",
+          "ordered_trade_merkle_root": "sha256:829114298bdde8bfd369d762b229edbf5928aa2f86e416597f652df96db74104"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "f7bbf9b51fb67f7d793629b4580cac8370740495910b424276761816ee9bec9bi0",
+        "txid": "f7bbf9b51fb67f7d793629b4580cac8370740495910b424276761816ee9bec9b",
+        "confirmed": true,
+        "block_height": 971702,
+        "block_hash": "000000000000000000016e6e18459601720ffe8840e295ed17e236edb9b1d2e4",
+        "block_time_utc": "2026-10-16T11:23:37+00:00",
+        "byte_length": 2155,
+        "payload_sha256": "sha256:634cc7b34d93c74d2f241c8ced75fda60b0bfd608697b6115c58c50580a539db",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 971699,
+        "seed_block_hash": "000000000000000000002b62e09347b2c27c54244e4400c5f7111477f48f840c",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W43",
+      "regime": "v2-weekly-operating",
+      "week_start": "2026-10-19",
+      "week_end": "2026-10-23",
+      "trading_days": 5,
+      "weekly_trade_count": 53,
+      "commitment": {
+        "inscription_id": "724a313a0ec819186552f6ef81062cbf3099f0f75053521bacf66a25f29ababci0",
+        "txid": "724a313a0ec819186552f6ef81062cbf3099f0f75053521bacf66a25f29ababc",
+        "confirmed": true,
+        "block_height": 972864,
+        "block_hash": "00000000000000000001ba415b1177d633d064c137612653c7a3228d714b7b15",
+        "block_time_utc": "2026-10-24T02:57:37+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 6500,
+        "payload_sha256": "sha256:c4ade42625d7c6ded4ac3e881d37d3df051e6e128e52cc9adbd7a5401231c178",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.2.0",
+        "weekly_trade_pool_root": "sha256:9cbf434bc56ce0519e2d20cef9ff1ef5e5f2a5e771c843f27e8f096c3ba2eb3e",
+        "previous_weekly_commitment_inscription_id": "012b2e02d9cfc83545d9be646a0cbe7d1f472313f475aa1bf07af5916fc9198ai0",
+        "pointer_status": "exact-previous-week-commitment"
+      },
+      "index_metrics": {
+        "prior_strategy_index": "97.9295",
+        "week_start_strategy_index": "97.5109",
+        "week_end_strategy_index": "96.9286",
+        "weekly_return_pct": "-1.0221"
+      },
+      "daily_hashes": [
+        {
+          "date": "2026-10-19",
+          "trade_count": 5,
+          "strategy_index": "97.5109",
+          "daily_return_pct": "-0.4275",
+          "daily_child_hash": "sha256:1c227441914ac5688a1729a5d5ee5b556fd9e9d7750ccaae2c7db1879d080cd1",
+          "evidence_hash": "sha256:fa81a0bbcd2943baa744837648a73082a5c45d600084aade1f176e2c0355ed16",
+          "public_trade_merkle_root": "sha256:376673d0d45e935d234452be173fc538719587fe7e9b80824bc21cb35d9b36a2",
+          "ordered_trade_merkle_root": "sha256:5c67914dafd399a5cbba2bacecb3c02aecb214232d7fbda5f20e3440c2263682",
+          "position_episode_merkle_root": "sha256:2dcd35a7df2117e573a9a021e414bc2442a599f1d1f98747b30af2b107826ba0"
+        },
+        {
+          "date": "2026-10-20",
+          "trade_count": 6,
+          "strategy_index": "97.7876",
+          "daily_return_pct": "0.2838",
+          "daily_child_hash": "sha256:c85f84045f49668f39620207e7915aea4f7ef5f68a9cda1d2f15e4bb0410bc8a",
+          "evidence_hash": "sha256:a7da449634de20e1c93e435ddfdaa7a0184722c353aa0c63b3e9b73e650a81ab",
+          "public_trade_merkle_root": "sha256:ec3280d678e21c0424469ef4758713b644730b8b20b65968e532886c5ce7f1d4",
+          "ordered_trade_merkle_root": "sha256:a196bc6e5c2218f327767a285d19f5e518294c05638740e0f9c34d8bb14076e0",
+          "position_episode_merkle_root": "sha256:ce9fece85a3c53ead041d1dfb1970580667792fccf9d0bd705d0567a4a09e247"
+        },
+        {
+          "date": "2026-10-21",
+          "trade_count": 15,
+          "strategy_index": "96.8231",
+          "daily_return_pct": "-0.9863",
+          "daily_child_hash": "sha256:6b360604db8bcc62f55ee46477d75fc6704297ddfad3a843f144d31cd476eafe",
+          "evidence_hash": "sha256:f4457e222158efeea396cdb4a3a5c6b29e51ce01a589aeeebf9954332c7cfd38",
+          "public_trade_merkle_root": "sha256:117184c27c20559da6d7e0e1dadc113d0c6e7241fda1f39cd1986e2452aad50a",
+          "ordered_trade_merkle_root": "sha256:6806b84d7168f4688e3ce1998411605cae5d53194bc6ed49887c6c9f89ef254f",
+          "position_episode_merkle_root": "sha256:51f9a7f397bb9d12b98ff3cd6b7bd183cc03250112c77d6691c6db181757e2ef"
+        },
+        {
+          "date": "2026-10-22",
+          "trade_count": 10,
+          "strategy_index": "94.9911",
+          "daily_return_pct": "-1.8922",
+          "daily_child_hash": "sha256:a6fea11c10f533c36bf5ae09739b74ebbfb6e70cfae9c0d4973fe7a0929f6154",
+          "evidence_hash": "sha256:676b6013e9d24f95a907df5b294e01ed923d45c2459d15322cf828283256983e",
+          "public_trade_merkle_root": "sha256:09b047a2ed5f3ca92548e6a2d74016da85628cf258ceb8fd46c934841c065131",
+          "ordered_trade_merkle_root": "sha256:fa09168c71fc2b5ebaa438684700014a613521fd3f9e7709d1ba345d542d2973",
+          "position_episode_merkle_root": "sha256:10c6b3fef77298d7d1deba5417ef974996d5ce881b3333cdc40d5d6d11e1c4e3"
+        },
+        {
+          "date": "2026-10-23",
+          "trade_count": 17,
+          "strategy_index": "96.9286",
+          "daily_return_pct": "2.0397",
+          "daily_child_hash": "sha256:669d2da4bc62664547d342377d49453b15deccac2f37a5af23ceb96c86cf7d9e",
+          "evidence_hash": "sha256:437546b0160a75971f4d33e7120aae82d337ba849e4e8bcbc0a2811e292ba9bd",
+          "public_trade_merkle_root": "sha256:5c40e6686d09e7c58c6c396bbdd105e26e2fc79676007aa2f8a45ba1ffc946b0",
+          "ordered_trade_merkle_root": "sha256:7ca1952e61e4fd5f7942ccd02ffc2d4f3cb4c4a454a02b91eee9cb4c4f39a64b",
+          "position_episode_merkle_root": "sha256:a29de54226d7b6db47f86b3cd4a784509e93322d1205d336e1213967b52f6086"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "a3ffd720a9fcdc779c51e135bee3283947b63d8bb82f549365b896a58b96ae51i0",
+        "txid": "a3ffd720a9fcdc779c51e135bee3283947b63d8bb82f549365b896a58b96ae51",
+        "confirmed": true,
+        "block_height": 972876,
+        "block_hash": "00000000000000000001143ec1dfa337dfd23c9f3c1ff63c35cf0f8881d332e0",
+        "block_time_utc": "2026-10-24T04:32:49+00:00",
+        "byte_length": 2031,
+        "payload_sha256": "sha256:d34a423a84d64ff34fd76758bfb7e0159b2038af195f064d998d37eb1fae5afc",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 972870,
+        "seed_block_hash": "0000000000000000000117bb6fa3f796c02b2476333e82cba5df1dc604ad1077",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W44",
+      "regime": "v2-weekly-operating",
+      "week_start": "2026-10-26",
+      "week_end": "2026-10-30",
+      "trading_days": 5,
+      "weekly_trade_count": 80,
+      "commitment": {
+        "inscription_id": "99a6d8674213fc20804390ad0a61be2528014a7feecf14f5408fdfa6deb45c01i0",
+        "txid": "99a6d8674213fc20804390ad0a61be2528014a7feecf14f5408fdfa6deb45c01",
+        "confirmed": true,
+        "block_height": 973813,
+        "block_hash": "000000000000000000005c324124165450aee81fac06fd582323cbe6f7bace1b",
+        "block_time_utc": "2026-10-30T11:16:55+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 6505,
+        "payload_sha256": "sha256:7593c4fee0f11dd0d52198bc64ad6899652c5dcf4fe4cd5fda1ebc1d9b21054d",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.2.0",
+        "weekly_trade_pool_root": "sha256:d52bc1f04ac847115a398f2a8e03cd3f3d00167bf24289d53929cbc92cc365ea",
+        "previous_weekly_commitment_inscription_id": "724a313a0ec819186552f6ef81062cbf3099f0f75053521bacf66a25f29ababci0",
+        "pointer_status": "exact-previous-week-commitment"
+      },
+      "index_metrics": {
+        "prior_strategy_index": "96.9286",
+        "week_start_strategy_index": "95.6922",
+        "week_end_strategy_index": "95.9707",
+        "weekly_return_pct": "-0.9883"
+      },
+      "daily_hashes": [
+        {
+          "date": "2026-10-26",
+          "trade_count": 10,
+          "strategy_index": "95.6922",
+          "daily_return_pct": "-1.2756",
+          "daily_child_hash": "sha256:d2623e218b00785e57c7a8d7c57e86aa3d4ff70b9f95c79e77e8ce8579159325",
+          "evidence_hash": "sha256:6d35a0a959897ba505ea7b33d1d43edacb55bc691986d0fdf14ebd5bdbc0173c",
+          "public_trade_merkle_root": "sha256:0c0636a8d2290b0177951efe18c6bfe8a67ccedd12b79d87b32cf7ae2bfc1706",
+          "ordered_trade_merkle_root": "sha256:53ed53f8eacb1a2af3203d69ddf16bed6827672d5d3a36d2c53e8db4d1a01c96",
+          "position_episode_merkle_root": "sha256:44453b0f01b66b01317ca9955925a7f510d42138acbbc72c06a23a293a9ff130"
+        },
+        {
+          "date": "2026-10-27",
+          "trade_count": 11,
+          "strategy_index": "94.3246",
+          "daily_return_pct": "-1.4292",
+          "daily_child_hash": "sha256:0d4c0660a06f4a0a4faf4c963b7a50e7048c7f322c0db1bdaf34f4b66eae62ae",
+          "evidence_hash": "sha256:608049308c5ba9dfcd00495f67faa26a7396f70b1a4b29bb65acb1e468e5ffc2",
+          "public_trade_merkle_root": "sha256:0390bf8b30b6d39d63594aeb41a2ede95b5738975dbf2607ca45c89070860066",
+          "ordered_trade_merkle_root": "sha256:cd34a6d2357d85dfa080202ea3b227f01ef1ad74779b28e9db1e303d32591c1a",
+          "position_episode_merkle_root": "sha256:e15f7925c4728601e5cbccc8a14c74b75980a3e3a09588e8decd18652cebd1b1"
+        },
+        {
+          "date": "2026-10-28",
+          "trade_count": 21,
+          "strategy_index": "96.7925",
+          "daily_return_pct": "2.6164",
+          "daily_child_hash": "sha256:afa113f3f499b53cd7293beeca9d7bf7f6b1c747cdf6aad4a8a019fbbc47e265",
+          "evidence_hash": "sha256:7b24202733d684f77d5c35adabbfcba9e9933827f5dc1d0dd2fcc2c3cc4f26a8",
+          "public_trade_merkle_root": "sha256:7664bdc6ab5c3bd4c5840628e9824ed8eeb33a99bbbe1c5b026eec3180abf858",
+          "ordered_trade_merkle_root": "sha256:c410d20240bcfae22e12488eeae2b7f0a0a59268bbb0c8efcafc52b3772c4252",
+          "position_episode_merkle_root": "sha256:7643699f22d0ee05f85b457919889b1e1e7ae9e3b8f33a3c54203b8126e1ab7b"
+        },
+        {
+          "date": "2026-10-29",
+          "trade_count": 24,
+          "strategy_index": "96.9126",
+          "daily_return_pct": "0.1241",
+          "daily_child_hash": "sha256:3cb4cf4038fa550e31f981b1715a267288019c5a6937e552da4172c8c0d01c84",
+          "evidence_hash": "sha256:9c3d3e0ab21de2fb6d028fc16ef6d2296bcf257c494bdeb9ed7977b6c4b29adb",
+          "public_trade_merkle_root": "sha256:c249b70f5a2dfef9b194c590eb24ce4095254cb214c8910b872c2ff7c5de7a92",
+          "ordered_trade_merkle_root": "sha256:c8f578913989209603cd43530cd36ea968bb33179c132c2c3602c876a9c9a2aa",
+          "position_episode_merkle_root": "sha256:50083bca34266a56bd89ab0bec1c89b384c96d5dd4eb243bc3775d6eee05abeb"
+        },
+        {
+          "date": "2026-10-30",
+          "trade_count": 14,
+          "strategy_index": "95.9707",
+          "daily_return_pct": "-0.9719",
+          "daily_child_hash": "sha256:00adbf2b69f342e63e65311081703e7c2a76e89c04f4cc532ef26381eb8414c6",
+          "evidence_hash": "sha256:9505a1788caa65adbc37e04cc946c4681ccb18f92848c3903fe62b4988499f0a",
+          "public_trade_merkle_root": "sha256:7baf31fc1c222fd2bf8073f315a9b90a48fbd3463ce2fd836abd1987b2ea1ea4",
+          "ordered_trade_merkle_root": "sha256:2146e5bb2d93c5efdfaee03ca95296f1ff5adf5bdc181a98be6e807d5afa25be",
+          "position_episode_merkle_root": "sha256:bc00ecfa51dfc8ca61e607c4b702e22a31a1f8e181eb9e4cfb05559d678ce5ea"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "d4ad0bc362dd28430e8b6c6c91a129d33fc646a19fad4af7ac05934b3b6973d2i0",
+        "txid": "d4ad0bc362dd28430e8b6c6c91a129d33fc646a19fad4af7ac05934b3b6973d2",
+        "confirmed": true,
+        "block_height": 973827,
+        "block_hash": "00000000000000000000b8a136d8181df8a281b3ce27d358b1cb14de4d9a475d",
+        "block_time_utc": "2026-10-30T13:35:33+00:00",
+        "byte_length": 2268,
+        "payload_sha256": "sha256:ed7b64ff520b8f63698418431c22110328bd776061d9f985b6620cb042452488",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 973819,
+        "seed_block_hash": "000000000000000000018d4b295e69e9695ea32693059720fe31b07f382aa3d1",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W45",
+      "regime": "v2-weekly-operating",
+      "week_start": "2026-11-02",
+      "week_end": "2026-11-06",
+      "trading_days": 5,
+      "weekly_trade_count": 54,
+      "commitment": {
+        "inscription_id": "15a920070a987bc8f4ba084df4774680fa786a60d71a8473425e1d1afb5b52a9i0",
+        "txid": "15a920070a987bc8f4ba084df4774680fa786a60d71a8473425e1d1afb5b52a9",
+        "confirmed": true,
+        "block_height": 974901,
+        "block_hash": "000000000000000000003b6931105a67cb0d86ecd85ea81bc247228f2c6f9b41",
+        "block_time_utc": "2026-11-07T06:23:16+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 6498,
+        "payload_sha256": "sha256:eee0b9a48bef8c11c74251c85bd51c1a87e8c13c5c289fb5a6f63336c8088dca",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.2.0",
+        "weekly_trade_pool_root": "sha256:4fd1631ec6464b135971e1b8b6b5b811f91caf6dee679fa2134163569efabb41",
+        "previous_weekly_commitment_inscription_id": "99a6d8674213fc20804390ad0a61be2528014a7feecf14f5408fdfa6deb45c01i0",
+        "pointer_status": "exact-previous-week-commitment"
+      },
+      "index_metrics": {
+        "prior_strategy_index": "95.9707",
+        "week_start_strategy_index": "97.3032",
+        "week_end_strategy_index": "96.4201",
+        "weekly_return_pct": "0.4683"
+      },
+      "daily_hashes": [
+        {
+          "date": "2026-11-02",
+          "trade_count": 8,
+          "strategy_index": "97.3032",
+          "daily_return_pct": "1.3884",
+          "daily_child_hash": "sha256:7093e32669d29ff499de48c2f2ac6ebe706dbaeca2e3e7a32dfe5fd486f90b24",
+          "evidence_hash": "sha256:da3f6c0df2fb12c9e142a7c833d013dd6b1ce11438405effde49d37a827dfeb5",
+          "public_trade_merkle_root": "sha256:acb738e9f383f814f61c546be21a414029bd308712e7c36b26d9c65d93ec31f5",
+          "ordered_trade_merkle_root": "sha256:2b310f9e2081cb9410ae384f27a55e464a43a3ec12fae4dfb0b4f59a1b0859c9",
+          "position_episode_merkle_root": "sha256:1cbe335bdac4bf39abeb9641ffb77d90905e33cccd8cd5262ca47b4fa6d27f5c"
+        },
+        {
+          "date": "2026-11-03",
+          "trade_count": 19,
+          "strategy_index": "97.4656",
+          "daily_return_pct": "0.1669",
+          "daily_child_hash": "sha256:f55f11c80fae4d99811446061ccb8c08120efa07e7ac53389cd8204c3567845d",
+          "evidence_hash": "sha256:b80860949568ae183f7e4ee9b0633e451509d4f150a04b9d67350f16fc78d822",
+          "public_trade_merkle_root": "sha256:0ebd50be3d74d4ca29ad9c48ca1953bd77cefd31d2d5c68f76e9100e4455ba6b",
+          "ordered_trade_merkle_root": "sha256:08ecb2df4a77622b69072a0026b0f9fe03f613afed6daac88f95f5fc9029a605",
+          "position_episode_merkle_root": "sha256:d62f2957b00a0743d02f35559e5b2a3eb0ed806c2ab0fe7d3f48f487e9865385"
+        },
+        {
+          "date": "2026-11-04",
+          "trade_count": 6,
+          "strategy_index": "96.4321",
+          "daily_return_pct": "-1.0604",
+          "daily_child_hash": "sha256:b2b485abde6abc503f9ad09d5bf78aa7cbabf1fd72c0d7264b43a1e76e931b7a",
+          "evidence_hash": "sha256:a1593c08118a0c8d5e90357269777cf5c066a2d92afee9ef1f7829f5360fcaee",
+          "public_trade_merkle_root": "sha256:0cf7bb6a0f7eaa9d473c56bf63fc2d66dee0ba7620305c55f0a5c2a967a5da1a",
+          "ordered_trade_merkle_root": "sha256:83bb3502dace372be19bb4b02223fa61c7090eab01cf734d281ba3f894878487",
+          "position_episode_merkle_root": "sha256:4cbada3134bfcc75be4f12d9cbb69889b3361a00fe6fd7c11e9d487b7888ec77"
+        },
+        {
+          "date": "2026-11-05",
+          "trade_count": 11,
+          "strategy_index": "98.2417",
+          "daily_return_pct": "1.8766",
+          "daily_child_hash": "sha256:155942efce66a146560ddc3db8d100924404a37a3b4432ee62c575ee43c703a9",
+          "evidence_hash": "sha256:57bd93c0d0bf99c17cf62bf5ba982652cf694d648c5d0c56c620876ac87ece05",
+          "public_trade_merkle_root": "sha256:36a10cbbf2efcde3f01d59e5499a6f861b75b21f440a081bf5661f71e2e7bc43",
+          "ordered_trade_merkle_root": "sha256:5434e960422ba74c2dff02471fba5d4724d7942d6a80be05769c6a3cb0106b51",
+          "position_episode_merkle_root": "sha256:0dc51407e54997ba6b0b870d50edafb214467a154578209894e1f1d09b5576b7"
+        },
+        {
+          "date": "2026-11-06",
+          "trade_count": 10,
+          "strategy_index": "96.4201",
+          "daily_return_pct": "-1.8542",
+          "daily_child_hash": "sha256:ea488a48d5f5e7f37e8d098573871a02494bfb0277339eb460983612823145a1",
+          "evidence_hash": "sha256:026483f9d59d11f106fd97c409664d406efb7b14986b4e4450f5d31feeac00aa",
+          "public_trade_merkle_root": "sha256:afb80b63d33e0a6f51dbb9009edbaa7475f3c55ec8b7ac4ef41fd6dacdccd742",
+          "ordered_trade_merkle_root": "sha256:702ef1252c55a4d6d5d0ad34f5afd0edd561e3633b5149be80bd41b8169806db",
+          "position_episode_merkle_root": "sha256:c2777a5e2d5a7c2a4ec24226c2bcd1edcd268dffc7b0f93f236f1248f70108bf"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "0d7f66be117cbe63744a70597a94e4a50bae56f4f394d45614be59ea6b95ff02i0",
+        "txid": "0d7f66be117cbe63744a70597a94e4a50bae56f4f394d45614be59ea6b95ff02",
+        "confirmed": true,
+        "block_height": 974920,
+        "block_hash": "00000000000000000000ff31f19e2574b1dbf62f7630f549d9742605da60c307",
+        "block_time_utc": "2026-11-07T10:32:13+00:00",
+        "byte_length": 2151,
+        "payload_sha256": "sha256:ea392774e5148d3b13aeffc6a23ca3b8c0ace545e1418ef6bc01a6b0353dbbf9",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 974907,
+        "seed_block_hash": "000000000000000000001c340b0a30f4599d1daf6e59731a26d33c8b98d18ffd",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W46",
+      "regime": "v2-weekly-operating",
+      "week_start": "2026-11-09",
+      "week_end": "2026-11-13",
+      "trading_days": 5,
+      "weekly_trade_count": 151,
+      "commitment": {
+        "inscription_id": "471e99a7037189ebeda0d33d691235f77188dc5c08dd20ab98001d6d07543a5ai0",
+        "txid": "471e99a7037189ebeda0d33d691235f77188dc5c08dd20ab98001d6d07543a5a",
+        "confirmed": true,
+        "block_height": 975673,
+        "block_hash": "00000000000000000000cc2b272e2fba6b1d496be2df4dc397d2559f387d6bbc",
+        "block_time_utc": "2026-11-13T12:50:30+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 6543,
+        "payload_sha256": "sha256:b39b7254df3e832524fba40495b0db37e93263432781b6ce05331b1dc026f8a7",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.2.0",
+        "weekly_trade_pool_root": "sha256:cbc97c8b0bc3d2c3fa870d6d935376ecd288515c891aad905539a416705e9f59",
+        "previous_weekly_commitment_inscription_id": "15a920070a987bc8f4ba084df4774680fa786a60d71a8473425e1d1afb5b52a9i0",
+        "pointer_status": "exact-previous-week-commitment"
+      },
+      "index_metrics": {
+        "prior_strategy_index": "96.4201",
+        "week_start_strategy_index": "96.5229",
+        "week_end_strategy_index": "96.1568",
+        "weekly_return_pct": "-3.8232"
+      },
+      "daily_hashes": [
+        {
+          "date": "2026-11-09",
+          "trade_count": 18,
+          "strategy_index": "96.5229",
+          "daily_return_pct": "0.1066",
+          "daily_child_hash": "sha256:5197f1f8f5d95e6f0970549ed23c2be9bfb058347d9134618604deb903cb2c1b",
+          "evidence_hash": "sha256:9c9207937cea40a215d23e0a5975a5284a74ab7dfea040b6b32b724e8fc1d0cb",
+          "public_trade_merkle_root": "sha256:7cc7b34d2ae5cd4daa1e33f5883bee3d80cc9020e748c5ea5318ced74f33d869",
+          "ordered_trade_merkle_root": "sha256:bdbabcb91b508501abd67bc7e8ac8f85f2a144cd122317b8bfb2a2a861dae59d",
+          "position_episode_merkle_root": "sha256:218db8236c9eb4d60f5c9c6ac2394975b0f933645d1884b0f0b778eb6209cbb4"
+        },
+        {
+          "date": "2026-11-10",
+          "trade_count": 33,
+          "strategy_index": "98.1482",
+          "daily_return_pct": "1.6838",
+          "daily_child_hash": "sha256:ac3cf58d55c3f17aaeed8c408b5452d1a703ab9b3f8dcfcf373eb65c52037c08",
+          "evidence_hash": "sha256:9a56aa0b0fbfd0bfdbfb8e992cfb94a0984dcad7d135a2386de735f69d5f9c48",
+          "public_trade_merkle_root": "sha256:e9275356f5f040e57aea09b6779d19363d4aa6b228d9f1ca8d62611728a538ce",
+          "ordered_trade_merkle_root": "sha256:898778298858712df2b30739d94fdf442cf8a2ec78954e5a3e761fbccaf39b62",
+          "position_episode_merkle_root": "sha256:1585b584d1bc0d6ff09cd9f9151d3a1f3532510836693b7761d41358b2aeadde"
+        },
+        {
+          "date": "2026-11-11",
+          "trade_count": 28,
+          "strategy_index": "98.2718",
+          "daily_return_pct": "0.1259",
+          "daily_child_hash": "sha256:9a38fc7336d5b1a802eb1d686971e5b7fd50d7ecb7be100beb5e2d6c6f1b630f",
+          "evidence_hash": "sha256:31f7f1f9cf7b98417057ed63f9a4ac43069f83c772047d6c8f027ebed27384a0",
+          "public_trade_merkle_root": "sha256:cfa0c50f00ba6e5114c8a077a05cc4969e38d5c58e85e5bb4064e1a4d1abf847",
+          "ordered_trade_merkle_root": "sha256:8264f8eddcbda5f79567cc472b00d0fb5f1f203ea803f1b65aeb3800c1cd46e9",
+          "position_episode_merkle_root": "sha256:8c8a4ef7c4cbd84137b6b70ff1eb2b878f2715e325ec34a6931a5bbe2525f41d"
+        },
+        {
+          "date": "2026-11-12",
+          "trade_count": 37,
+          "strategy_index": "97.4645",
+          "daily_return_pct": "-0.8215",
+          "daily_child_hash": "sha256:4b0804c2acf7834022104f5d5ee7909192ecb079aeef71a8810737010616bc31",
+          "evidence_hash": "sha256:c41f7fde7e9a1a676cda6e77ecda8435e2dd81c859c87c861f41177b88080281",
+          "public_trade_merkle_root": "sha256:2201ebf51bbce36fe6dcddca733c46d615207b6bcbe17dc4d3e33463104fc380",
+          "ordered_trade_merkle_root": "sha256:ab157968fd5eac22d6bf93be8faf6b17283ac7dc255919ea99ddbb2790c6c128",
+          "position_episode_merkle_root": "sha256:53de895abab668e2b3c772409c057a27cf53d2981e05bff0b1f6c193edf79e5a"
+        },
+        {
+          "date": "2026-11-13",
+          "trade_count": 35,
+          "strategy_index": "96.1568",
+          "daily_return_pct": "-1.3417",
+          "daily_child_hash": "sha256:9e3f129189ccfb6bf3bea965396af33f29198bb3215cc3154c53c94d819af990",
+          "evidence_hash": "sha256:c233ee72d043344bf5b1fc84e9f793470a6a78040f5c15ffea1f9ddd9fcb95bc",
+          "public_trade_merkle_root": "sha256:c13e7360bf64a1956de2731409200311727f474aedb6c3793591a8780cffc068",
+          "ordered_trade_merkle_root": "sha256:4208bef9851fd1e5b171d0a75ec607bbc3727883f90bf0959be42c9a24dbdd28",
+          "position_episode_merkle_root": "sha256:54e892c5defe136e3abb333370700358279a961607b513d09ac92c2390b81c3c"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "f88a3e672760b0cb84e645c4b411002fd24a98692fa9a04794ad64de729cad77i0",
+        "txid": "f88a3e672760b0cb84e645c4b411002fd24a98692fa9a04794ad64de729cad77",
+        "confirmed": true,
+        "block_height": 975682,
+        "block_hash": "0000000000000000000127b383f224b385bfa6dfa39fb33c33f661efb1fca05c",
+        "block_time_utc": "2026-11-13T14:04:19+00:00",
+        "byte_length": 2391,
+        "payload_sha256": "sha256:0b091eb8a2e66487bc3040aa7862816dc2041ae558d15e9d9ea70d0f6c42d257",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 975679,
+        "seed_block_hash": "00000000000000000001924ad80671801b6c53a48d0e3e6f85e17a135872f0b9",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    },
+    {
+      "week": "2026-W47",
+      "regime": "v2-weekly-operating",
+      "week_start": "2026-11-16",
+      "week_end": "2026-11-20",
+      "trading_days": 5,
+      "weekly_trade_count": 147,
+      "commitment": {
+        "inscription_id": "9992002e6d862478a942d4adb8b6f3afb036b26dad9f2b64b1ca28b6ed4aa6d4i0",
+        "txid": "9992002e6d862478a942d4adb8b6f3afb036b26dad9f2b64b1ca28b6ed4aa6d4",
+        "confirmed": true,
+        "block_height": 976833,
+        "block_hash": "000000000000000000019ada2495c08b2f353705b20f8d653ad2fe492b51249a",
+        "block_time_utc": "2026-11-21T03:20:25+00:00",
+        "content_type": "text/plain;charset=utf-8",
+        "byte_length": 6533,
+        "payload_sha256": "sha256:657473d854eba7b1b131c224f64586e4b63bd2ddf36383b879fae63bfabb284e",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "schema_version": "1.2.0",
+        "weekly_trade_pool_root": "sha256:92867fa4a0ad87383fa424c25b2c7b89fe97eb296a33049221412852a8b48e0d",
+        "previous_weekly_commitment_inscription_id": "471e99a7037189ebeda0d33d691235f77188dc5c08dd20ab98001d6d07543a5ai0",
+        "pointer_status": "exact-previous-week-commitment"
+      },
+      "index_metrics": {
+        "prior_strategy_index": "96.1568",
+        "week_start_strategy_index": "93.9832",
+        "week_end_strategy_index": "90.9797",
+        "weekly_return_pct": "-5.3840"
+      },
+      "daily_hashes": [
+        {
+          "date": "2026-11-16",
+          "trade_count": 43,
+          "strategy_index": "93.9832",
+          "daily_return_pct": "-2.2605",
+          "daily_child_hash": "sha256:7015cde53830935e3ae48a1a655d91e4d6c32deebc99931c8e9c80b0e0184379",
+          "evidence_hash": "sha256:63f190df1c29b4f9526590b7d4687b25865fc6988f7891b40f1c0a9f9330108e",
+          "public_trade_merkle_root": "sha256:4e9c9416bf8ad9c2786d47c6c8988dcda63ea2b987bed590b64193ee8fc3724d",
+          "ordered_trade_merkle_root": "sha256:d342948f1d184570113b39b15f768bda95ed6e3775148c62b9297ade4101dce1",
+          "position_episode_merkle_root": "sha256:e95d4317a7f3b1dd9de02603110d04ef22787bd974ce49fb299f8d79c8848170"
+        },
+        {
+          "date": "2026-11-17",
+          "trade_count": 27,
+          "strategy_index": "93.2426",
+          "daily_return_pct": "-0.7880",
+          "daily_child_hash": "sha256:c56557cf9be22b42fd377b56d80c1b9bc736624ce6e9b52381c6e5cd1c2be441",
+          "evidence_hash": "sha256:44731bc97aa1e19f94ff6161c23c7d699e27e5af64b3ebfc1d19732e85f2f1ad",
+          "public_trade_merkle_root": "sha256:60845cfeb11bd7c0223999f6e3559795ad4683995786acb00d3d01657937ba5c",
+          "ordered_trade_merkle_root": "sha256:df375a753fcdfcd1201d3131c56cedb4470a00b89d413a932ef74f2abd44e85e",
+          "position_episode_merkle_root": "sha256:1a4a4feae4dbe7fcdac9ea2b29f06920c323dcae411df1779ba5488d231967e4"
+        },
+        {
+          "date": "2026-11-18",
+          "trade_count": 32,
+          "strategy_index": "92.6459",
+          "daily_return_pct": "-0.6399",
+          "daily_child_hash": "sha256:b6c22cba9808523d3f907e7ce72f0c1cf6be0f8937715be33d7e9f5c9281c893",
+          "evidence_hash": "sha256:dc74dae2e5979af5b5bcd1be7ca2097ff95876e983f7d56b52762f391eac75ee",
+          "public_trade_merkle_root": "sha256:8781944d84e35ad8909b38dad8abf0ea675702ad4275a67c0b91a2536b1cec83",
+          "ordered_trade_merkle_root": "sha256:6f7c32deb83792daeb7689d440494f9863711794545dc54a84df37c18a030f7d",
+          "position_episode_merkle_root": "sha256:1de5fc520a4b2e12c72d462d46941d9e2d65d28a7ad91edb0a8fbf36a22a027b"
+        },
+        {
+          "date": "2026-11-19",
+          "trade_count": 16,
+          "strategy_index": "91.5433",
+          "daily_return_pct": "-1.1901",
+          "daily_child_hash": "sha256:086b217717e66c0ece62685dea6733b31b7d972f47d9508a2e01f5d5911591d6",
+          "evidence_hash": "sha256:e3c1ade56fc0abe694d278f43084e8e40a27d9e4b943cd5649bf4ed1a1bbd0a2",
+          "public_trade_merkle_root": "sha256:0929beae0d5cc627f93f22242b57438501998f91ba2263c655d601413accb325",
+          "ordered_trade_merkle_root": "sha256:c663f3d7c7ca21b8f7fc3e703fa4087f2b2d2caf366cfb17f69822abf0403a9f",
+          "position_episode_merkle_root": "sha256:ab2515753c78b91b8b6cbaff989ee7d1dc64ec90631e026ecb21fb9c6b310349"
+        },
+        {
+          "date": "2026-11-20",
+          "trade_count": 29,
+          "strategy_index": "90.9797",
+          "daily_return_pct": "-0.6157",
+          "daily_child_hash": "sha256:ec83afead5c8b6e46903ea330e46c25a519cb0d1e3c3a8c9e3b905a4e978ce5e",
+          "evidence_hash": "sha256:8e45135e3478f4a8cc6649f43e1d2ec2ef01c4127e20601aed1f268aed233eef",
+          "public_trade_merkle_root": "sha256:742f58a0bda14b1f723643a995a2dd0dfc3345b8f8b73228ec8a3b257f876fd8",
+          "ordered_trade_merkle_root": "sha256:33dc1187dd431a0bc11bd8780a5e3291b39392ec84699112217a1e2def23ba9f",
+          "position_episode_merkle_root": "sha256:0301b2a1e11b3044a3ddc339649983d96f8a17ad34369e8e5a0e9fcb3cbc3131"
+        }
+      ],
+      "reveal": {
+        "inscription_id": "d8917af88500640a0ddb7d7a8456ea1b73b9b7a070ebfe076765e330a81a384ai0",
+        "txid": "d8917af88500640a0ddb7d7a8456ea1b73b9b7a070ebfe076765e330a81a384a",
+        "confirmed": true,
+        "block_height": 976860,
+        "block_hash": "0000000000000000000194c1f8bcdf76da1edc47f28873b2cbd991e4b6a1f7d7",
+        "block_time_utc": "2026-11-21T06:16:13+00:00",
+        "byte_length": 2389,
+        "payload_sha256": "sha256:2fe53c1fa32b17402deb3530a4f254ed977c944cf40984f4dada2c9d820ebcf2",
+        "onchain_parents": [
+          "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0"
+        ],
+        "parent_7187_verified": true,
+        "commitment_ref_matches": true,
+        "seed_block_height": 976839,
+        "seed_block_hash": "0000000000000000000138b12fa22fd140fe2fb619348fab6f9c0b316a0ae20f",
+        "seed_delay_blocks": 6
+      },
+      "reveal_status": "confirmed-on-bitcoin-l1"
+    }
+  ],
+  "verification_boundary": {
+    "what_this_proves": "Each listed commitment and reveal inscription exists in a confirmed Bitcoin mainnet transaction witness, declares 7187.bitmap as parent, matches its reported SHA-256 and byte length, and binds each reveal to its week's commitment with a post-commit Bitcoin seed block.",
+    "what_this_does_not_prove": "It does not expose private holdings, stock selection models, broker statements, or fiat account balances, and it does not by itself verify broker-to-chain accounting without private/selective-reveal audit material or prove future performance.",
+    "reproduce_command": "PYTHONPATH=src python3 scripts/publish_bitcoin_weekly_proofs.py"
+  }
+}

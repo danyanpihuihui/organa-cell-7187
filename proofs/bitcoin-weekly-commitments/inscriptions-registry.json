@@ -1,0 +1,107 @@
+{
+  "schema_version": "organa-bitcoin-weekly-inscriptions-registry-v0.1",
+  "coordinate": "7187.bitmap",
+  "parent_bitmap_inscription_id": "50123b2d404f0ca8d97d07a98bd897d748b2db3d611496fa4eb1288171e8ea61i0",
+  "strategy_passport_inscription_id": "399fded9cb7caa4e0d3058d86e22cd5958b2dfd966d3e42f3dc4f36586417122i0",
+  "note": "Public Bitcoin mainnet inscription IDs only. All metadata, hashes, block heights, and chain continuity are re-derived directly from confirmed Bitcoin L1 transaction witnesses; unconfirmed or local-only weeks are excluded.",
+  "skipped_weeks": [
+    "2026-W35"
+  ],
+  "weeks": [
+    {
+      "week": "2026-W28",
+      "commitment_inscription_id": "970bef575e16a101616905ebb48be2101844c31acf98bcc68c9448bc52f6b095i0",
+      "reveal_inscription_id": "5acab23e616a664ab7b81e6f44e70f11d5fb5d5b9e999a0416c964d91dab5b0di0"
+    },
+    {
+      "week": "2026-W29",
+      "commitment_inscription_id": "f4e11247b10c00a7041f64c81e27d81a28a8c85ffa090a3c3c4672dba037734ei0",
+      "reveal_inscription_id": "8e6472f3d1f98a85da28dc126c1266855641f8a2c639274190ed70359b5e4285i0"
+    },
+    {
+      "week": "2026-W30",
+      "commitment_inscription_id": "9c913cd8058a6fb136f7cd93ef3478f8425c84756af37d3cd4bd03591c10d618i0",
+      "reveal_inscription_id": "8ace1c8761efcf3addc7173f103d7c6b47a38859d75a8d286f34a5e73f2df1b9i0"
+    },
+    {
+      "week": "2026-W31",
+      "commitment_inscription_id": "fc88e6d1a344cd8069cfe451a6379937d2cad79aa0c95e0910fbeb89f185698di0",
+      "reveal_inscription_id": "4f52e2496a85575084bc68bddf4ef440fb511d22e00f5ca2da0bba657854c551i0"
+    },
+    {
+      "week": "2026-W32",
+      "commitment_inscription_id": "b8356051913834ed4bf347d56de9a076cee2af1ff91e2d703a805716a09726e1i0",
+      "reveal_inscription_id": "58b948d25e199f974017cdc128dc4aa0c143d5586fd5dae5a8ed95598a713b58i0"
+    },
+    {
+      "week": "2026-W33",
+      "commitment_inscription_id": "0a8390af0265d9ff675d1c3128806d0fe39989715cc88ed6d08eaf1252d2f12di0",
+      "reveal_inscription_id": "fbd8648346a6510a665a065676b14e5f51c0cb79ec172616a1669b692f75d4cai0"
+    },
+    {
+      "week": "2026-W34",
+      "commitment_inscription_id": "3350c15f5d52ce50b25929f312e1d538c3c814b9250a7ced404eb37f0592a6a3i0",
+      "reveal_inscription_id": "a6df62dc56a890543e9b47386032a4c6f595681b0e9e08d9db8b37271a04c331i0"
+    },
+    {
+      "week": "2026-W36",
+      "commitment_inscription_id": "5e14ab6facd8cce03fe782362323b21469dfcbcddab960700cc5cb845ef230edi0",
+      "reveal_inscription_id": null
+    },
+    {
+      "week": "2026-W37",
+      "commitment_inscription_id": "3b1fa62d3f78d165bdc94c056cbe0e2de60e2af756e066b83771176f25d77c31i0",
+      "reveal_inscription_id": "47c440167dbb08f412c5d246a6b9490767d163f77573f1e8de65777dfaaa2ed1i0"
+    },
+    {
+      "week": "2026-W38",
+      "commitment_inscription_id": "79778ae7028e5e3304ef93894b35aa1472b9ca55ede3cc0108e66914063ddb68i0",
+      "reveal_inscription_id": "62f9b306e72a2442b528401b280547add829d65d7eb407335ef55bc51bab225fi0"
+    },
+    {
+      "week": "2026-W39",
+      "commitment_inscription_id": "97822fcfa2e81c70abd1402043db95a6b5347ec0a8f9d6b654a86bdb5205746bi0",
+      "reveal_inscription_id": "421290394a3b400e65e4e5c2ffae77a97741cca5b84ac01af71c50656e4133f5i0"
+    },
+    {
+      "week": "2026-W40",
+      "commitment_inscription_id": "750e37241fba6839959654540d873a3532490450dd661303d7c360546c8a1509i0",
+      "reveal_inscription_id": "e074804d2524bb9170b15bf983f7ed5a3dc9160bfac26d7bcfcb05cd747bb3d2i0"
+    },
+    {
+      "week": "2026-W41",
+      "commitment_inscription_id": "0fece084a3597912ba679693c9428703887d927d680a88ab67a04e57cafe7800i0",
+      "reveal_inscription_id": "b98ae489bad762a721ab04e57a20b23ec282d5fd7cf47a3a774bd552e7970119i0"
+    },
+    {
+      "week": "2026-W42",
+      "commitment_inscription_id": "012b2e02d9cfc83545d9be646a0cbe7d1f472313f475aa1bf07af5916fc9198ai0",
+      "reveal_inscription_id": "f7bbf9b51fb67f7d793629b4580cac8370740495910b424276761816ee9bec9bi0"
+    },
+    {
+      "week": "2026-W43",
+      "commitment_inscription_id": "724a313a0ec819186552f6ef81062cbf3099f0f75053521bacf66a25f29ababci0",
+      "reveal_inscription_id": "a3ffd720a9fcdc779c51e135bee3283947b63d8bb82f549365b896a58b96ae51i0"
+    },
+    {
+      "week": "2026-W44",
+      "commitment_inscription_id": "99a6d8674213fc20804390ad0a61be2528014a7feecf14f5408fdfa6deb45c01i0",
+      "reveal_inscription_id": "d4ad0bc362dd28430e8b6c6c91a129d33fc646a19fad4af7ac05934b3b6973d2i0"
+    },
+    {
+      "week": "2026-W45",
+      "commitment_inscription_id": "15a920070a987bc8f4ba084df4774680fa786a60d71a8473425e1d1afb5b52a9i0",
+      "reveal_inscription_id": "0d7f66be117cbe63744a70597a94e4a50bae56f4f394d45614be59ea6b95ff02i0"
+    },
+    {
+      "week": "2026-W46",
+      "commitment_inscription_id": "471e99a7037189ebeda0d33d691235f77188dc5c08dd20ab98001d6d07543a5ai0",
+      "reveal_inscription_id": "f88a3e672760b0cb84e645c4b411002fd24a98692fa9a04794ad64de729cad77i0"
+    },
+    {
+      "week": "2026-W47",
+      "commitment_inscription_id": "9992002e6d862478a942d4adb8b6f3afb036b26dad9f2b64b1ca28b6ed4aa6d4i0",
+      "reveal_inscription_id": "d8917af88500640a0ddb7d7a8456ea1b73b9b7a070ebfe076765e330a81a384ai0"
+    }
+  ]
+}
